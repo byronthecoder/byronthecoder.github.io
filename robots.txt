@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://byronthecoder.github.io/al-folio/sitemap.xml
+Sitemap: https://byronthecoder.github.io/sitemap.xml
