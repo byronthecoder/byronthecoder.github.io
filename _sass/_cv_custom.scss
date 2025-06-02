@@ -1,0 +1,61 @@
+// Custom styles for CV page
+// Override the default container for CV pages
+// The !important flags are used to override Bootstrap defaults
+
+// Container for CV content
+.cv-container {
+  width: 100% !important;  // Always use full width of parent
+}
+
+// Wide layout option (enabled by default)
+.container.cv-page-container {
+  max-width: 1400px !important;
+  width: 95% !important; // Use more of the available width
+}
+
+// Make sure the year badges have enough space and don't wrap text
+.cv-year-badge {
+  min-width: 120px !important;
+  width: 100% !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+  overflow: visible !important;
+  font-size: 0.85rem !important; // Slightly smaller font to fit long dates
+  line-height: 1.2 !important; // Better line height for readability
+}
+
+// Fix the year column width to be wider
+.cv-year-column {
+  width: 150px !important; // Force wider year column
+  min-width: 150px !important;
+  max-width: 150px !important;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .cv-year-column {
+    width: 120px !important;
+    min-width: 120px !important;
+  }
+  
+  .cv-content-column {
+    width: calc(100% - 120px) !important;
+  }
+}
+
+// Add more space for the title column and ensure it uses the remaining space
+.cv-content-column {
+  padding-left: 50px !important;
+  width: calc(100% - 150px) !important; // Use remaining space
+}
+
+/* 
+ * USAGE INSTRUCTIONS:
+ *
+ * To toggle between wide and default layout, edit your CV page front matter:
+ * ---
+ * layout: cv
+ * wide_layout: true    # Set to true for wide layout (fixes year/title overlap)
+ *                      # Set to false for default layout
+ * ---
+ */

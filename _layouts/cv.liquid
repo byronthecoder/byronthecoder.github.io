@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+{% assign orig_content = content %}
+<script>
+  // Add a class to the main container to make it wider for CV pages
+  document.addEventListener('DOMContentLoaded', function() {
+    {% if page.wide_layout != false %}
+      document.querySelector('.container[role="main"]').classList.add('cv-page-container');
+    {% endif %}
+  });
+</script>
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
@@ -27,7 +36,7 @@ layout: default
     </header>
 
     <article>
-      <div class="cv">
+      <div class="cv cv-container">
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
@@ -99,24 +108,21 @@ layout: default
                   {% include resume/work.liquid %}
                 {% when 'volunteer' %}
                   {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
                 {% when 'awards' %}
                   {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
                 {% when 'publications' %}
                   {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
                 {% when 'references' %}
                   {% include resume/references.liquid %}
+                {% when 'languages' %}
+                  {% include resume/languages.liquid %}
+                {% when 'skills' %}
+                  {% include resume/skills.liquid %}
+                {% when 'interests' %}
+                  {% include resume/interests.liquid %}
+                {% when 'projects' %}
+                  {% include resume/projects.liquid %}
                 {% else %}
-
               {% endcase %}
             </div>
           </div>

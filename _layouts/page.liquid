@@ -19,7 +19,14 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-    <h2>References</h2>
+    {% comment %}
+      <h2>References</h2>
+      <div style="display:none">
+        {% for id in page.related_publications %}
+        {% cite id %}
+        {% endfor %}
+      </div>
+    {% endcomment %}
     <div class="publications">
       {% bibliography --cited_in_order %}
     </div>

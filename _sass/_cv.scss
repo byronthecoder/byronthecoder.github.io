@@ -218,3 +218,53 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * Responsive fixes for time_table
+ *****************************/
+
+/* Fix overlapping issues on smaller screens */
+@media (max-width: 768px) {
+  .list-group-item .row {
+    flex-direction: column !important;
+  }
+  
+  .list-group-item .col-xs-2,
+  .list-group-item .col-sm-2,
+  .list-group-item .col-md-2 {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list-group-item .col-xs-10,
+  .list-group-item .col-sm-10,
+  .list-group-item .col-md-10 {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+  
+  .badge.danger-color-dark {
+    min-width: auto !important;
+    display: inline-block;
+  }
+  
+  h6.title.font-weight-bold {
+    margin-left: 0 !important;
+  }
+  
+  table.institution {
+    margin-left: 0 !important;
+  }
+}
+
+/* Ensure proper spacing and prevent text overflow */
+.list-group-item {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.badge.danger-color-dark {
+  word-break: keep-all;
+  white-space: nowrap;
+}
+@import "cv_custom";

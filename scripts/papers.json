@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The ADAIO System: AI Teacher Responses in Educational Dialogues",
+    "filename": "adaio_system.png",
+    "authors": ["Yuan, Z.", "Chen, X.", "Thompson, A."],
+    "conference": "BEA Workshop 2023"
+  },
+  {
+    "title": "The ART of Conversation: Measuring Phonetic Convergence with Siamese RNN",
+    "filename": "entrainment_siamese.png",
+    "authors": ["Yuan, Z.", "Balázs, B.", "Kohári, A.", "Malisz, Z."],
+    "conference": "Interspeech 2023"
+  },
+  {
+    "title": "ART Corpus: Speech Entrainment and Imitation Dataset",
+    "filename": "art_corpus.png",
+    "authors": ["Yuan, Z.", "Balázs, B.", "Kohári, A."],
+    "conference": "LREC 2024"
+  },
+  {
+    "title": "Language Proficiency and F0 Entrainment in L2 English",
+    "filename": "f0_entrainment.png",
+    "authors": ["Yuan, Z.", "Malisz, Z."],
+    "conference": "Speech Prosody 2024"
+  },
+  {
+    "title": "Breathing Features and Speech Perception in COVID-19 Patients",
+    "filename": "covid_breathing.png",
+    "authors": ["Yuan, Z.", "Kohári, A.", "Gábor, A."],
+    "conference": "Interspeech 2024"
+  }
+]

@@ -1,97 +1,158 @@
-- title: General Information
+- title: Basics
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - name: Name
+      value: Zheng Yuan (袁铮)
+    - name: Nickname
+      value: Byron
+    - name: Email
+      value: zheng.yuan@univ-amu.fr
+    # - name: Languages
+    #   value: Mandarin (native), English (fluent), Italian (intermediate), French (basic)
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Researcher
+      institution: Laboratoire Parole et Langage (LPL), Aix-Marseille University, Aix-en-Provence, France
+      year: Oct 2024 - Present 
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Using deep learning algorithms to explore word and syllable prosodic structures, dynamics, and neural mechanisms in speech interaction.
+    - title: PhD Student Fellow
+      institution: Italian Institute of Technology, Ferrara, Italy
+      year: Jan 2021 - Sep 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Undertook the speech entrainment sub-topic of the European Union's Conversational Brains project, performing speech data collection, machine learning algorithms, and behavioural experiments.
+    - title: Research Scientist (Intern)
+      institution: DAVI the Humanizers, Reims, France
+      year: May 2023 - Aug 2023
       description:
+        - Built a web-based voice similarity analyzer for DAVI's conversational AI.
+        - Developed an emotional speech data collection experiment via a language game.
+    - title: Research Assistant
+      institution: Chinese Academy of Sciences, Beijing, China
+      year: Nov 2019 - Jun 2020
+      description:
+        - Worked in the speech group led by Prof. Jianhua Tao, focusing on automatic speech assessment and regional dialect processing.
+    - title: University Teacher
+      institution: University of Sheffield, Sheffield, UK
+      year: Nov 2017 - Aug 2019
+      description:
+        - Undertook the Non-specialist Chinese module at the East Asian Studies Department.
+        - Performed translation and interpretation for the University, Sheffield City Council and Sheffield Chamber of Commerce.
+    - title: Visiting Lecturer
+      institution: University of Ljubljana, Ljubljana, Slovenia
+      year: Oct 2015 - Jun 2017
+      description:
+        - Undertook the Modern Chinese courses for undergraduate students and the Translation course for post-graduate students.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Education
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: PhD in Neuroscience
+      institution: University of Ferrara, Ferrara, Italy
+      year: 2020-2024
+      # description:
+      #   - Marie Curie Early Stage Researcher
+      #   - Project: Detecting Speech Entrainment Using Deep Neural Networks
+    - title: MSc. Computer Science (Speech and Language Processing)
+      institution: University of Sheffield, Sheffield, UK
+      year: 2018-2019
+      # description:
+      #   - Core Modules: Machine Learning, Natural Language Processing, Speech Technology, Object-Oriented Programming
+    - title: M.A. Translation Studies
+      institution: Shanghai University of International Business and Economics, Shanghai, China
+      year: 2013-2017
+      # description:
+      #   - Core Modules: Computer-Aided Translation, Cognitive Science, Translation Studies
+    - title: B.A. English Linguistics & Literature
+      institution: Southwest Forestry University, Kunming, China
+      year: 2009-2013
+      # description:
+      #   - Core Modules: General Linguistics, Phonetics, Pragmatics, English Literature
+
+
+- title: Skills
+  type: nested_list # Or 'list' if you prefer a simpler format
+  contents:
+    - title: Top Skills
+      items:
+        - speech signal processing
+        - deep learning
+        - neurolinguistics
+        - cognitive science
+        - second language acquisition
+    - title: Programming Languages
+      items:
+        - Python
+        - R
+        - Java
+        - MATLAB
+        - JavaScript
+        - BASH
+        - HTML
+        - LaTeX
+    # - title: Markup Languages # This was commented out in your .tex, so I'm leaving it out unless you want it
+    #   items:
+    #     - HTML
+    #     - LaTeX
+    #     - Markdown
+    # - title: Software # This was commented out in your .tex
+    #   items:
+    #     - Pure Data
+    #     - Praat
+    #     - Audition
+    #     - SPSS
+    #     - Unity
+
+# - title: Open Source Projects # No direct equivalent in LPL.tex, keeping example for now
+#   type: time_table
+#   contents:
+#     - title: <a href=\"https://github.com/alshedivat/al-folio\">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
-  type: time_table
+  type: time_table # Using time_table to match existing structure, though list might also work
   contents:
-    - year: 1921
+    - year: 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - 2nd Place at the BEA Shared task generating AI teacher responses in educational dialogues
+    - year: 2020
       items:
-        - Max Planck Medal
+        - Marie Sklodowska-Curie Early Stage Researcher Fellowship
+    - year: 2017
+      items:
+        - Certificate for Teachers of Chinese to Speakers of Other Languages by Chinese Testing International
+    - year: 2015
+      items:
+        - First Prize in 16th National English Debate Competition for College Students
+    - year: 2014
+      items:
+        - Konrad-Adenauer-Stiftung Scholarship
+    - year: 2012
+      items:
+        - National Scholarship for Academic Excellence
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Brain-inspired Artificial Intelligence
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Prediction and Learning
+        - Artificial and Human Intelligence
+        - Language and Intelligence
+    - title: Speech Science
       items:
-        - Description 1.
-        - Description 2.
+        - Speech Entrainment and Imitation
+        - Phonetic Convergence
+        - Prosody
+    - title: AI in Education
+      items:
+        - AI in Language Learning
+        - Game-based Learning
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hiking, Photography, Cooking

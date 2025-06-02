@@ -1,34 +1,55 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# "adigwe":
+#   - firstname: ["Adaeze"]
+#     url: https://scholar.google.com/citations?user=EXAMPLEURL
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"pastore":
+  - firstname: ["Aldo"]
+    url: https://scholar.google.com/citations?user=73W6TEMAAAAJ&hl=en&oi=ao
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"de jong":
+  - firstname: ["Dorina"]
+    url: https://scholar.google.com/citations?user=ePOUTYcAAAAJ
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"xu":
+  - firstname: ["Hao"]
+    url: https://scholar.google.com/citations?user=5WoBm1gAAAAJ
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"fadiga":
+  - firstname: ["Luciano"]
+    url: https://scholar.google.com/citations?user=EPOtdwMAAAAJ
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"D’Ausilio":
+  - firstname: ["Alessandro"]
+    url: https://scholar.google.com/citations?user=uKn-9MoAAAAJ
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"benus":
+  - firstname: ["Štefan", "Stefan"]
+    url: https://scholar.google.com/citations?user=UHGYV8UAAAAJ
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"nguyen":
+  - firstname: ["Noël"]
+    url: https://scholar.google.com/citations?user=p6KlzsMAAAAJ
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+# "feng":
+#   - firstname: ["Ruitao"]
+#     url: https://scholar.google.com/citations?user=EXAMPLEURL
+
+"sabo":
+  - firstname: ["Róbert", "Robert"]
+    url: https://scholar.google.com/citations?user=rOzM-v4AAAAJ
+
+"jiang":
+  - firstname: ["Xiaoming"]
+    url: https://scholar.google.com/citations?user=iF2CM7sAAAAJ
+
+# "yu":
+#   - firstname: ["Lixin"]
+#     url: https://scholar.google.com/citations?user=EXAMPLEURL
+
+# "dai":
+#   - firstname: ["Leinuo"]
+#     url: https://scholar.google.com/citations?user=EXAMPLEURL
+
+# "chen":
+#   - firstname: ["Jinyang"]
+#     url: https://scholar.google.com/citations?user=EXAMPLEURL

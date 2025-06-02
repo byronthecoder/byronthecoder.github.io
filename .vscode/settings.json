@@ -1,0 +1,9 @@
+{
+  "yaml.schemas": {
+    "https://json.schemastore.org/jekyll.json": [
+      "file:///Users/lambda/GitHub/byronthecoder.github.io/_config.yml"
+    ],
+    "yaml.customTags": [ "!ruby/object:* mapping" ]
+  },
+  "yaml.validate": false
+}
