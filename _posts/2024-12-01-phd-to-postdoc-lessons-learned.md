@@ -33,25 +33,31 @@ Working with speech data presents unique challenges that traditional machine lea
 My approach evolved significantly over the four years:
 
 **Year 1-2**: Focus on traditional acoustic features (MFCCs, spectral measures)
-- *Lesson*: While these features are interpretable, they miss crucial prosodic information
+
+- _Lesson_: While these features are interpretable, they miss crucial prosodic information
 
 **Year 2-3**: Integration of prosodic analysis using Praat and custom algorithms
-- *Lesson*: Prosodic features require careful normalization across speakers and recording conditions
+
+- _Lesson_: Prosodic features require careful normalization across speakers and recording conditions
 
 **Year 3-4**: Deep learning approaches with attention mechanisms
-- *Lesson*: Neural networks can capture complex temporal patterns, but require careful validation to ensure they're learning meaningful linguistic phenomena rather than spurious correlations
+
+- _Lesson_: Neural networks can capture complex temporal patterns, but require careful validation to ensure they're learning meaningful linguistic phenomena rather than spurious correlations
 
 ## International Collaboration: The DAVI Experience
 
 My internship at DAVI the Humanizers in Reims was a crucial bridge between academic research and industry application. Working on voice similarity analysis for conversational AI taught me:
 
 ### Product-Focused Research
+
 Academic research often prioritizes novelty and theoretical understanding, while industry needs robust, scalable solutions. The challenge was adapting my entrainment detection work into a real-time voice analysis system that could handle:
+
 - Diverse accents and speaking styles
 - Noisy recording conditions
 - Computational constraints of web deployment
 
 ### User-Centered Design
+
 Developing the emotional speech collection system through language games highlighted the importance of user experience in research tools. The most sophisticated algorithm is useless if researchers can't easily collect quality data with it.
 
 ## Transitioning to LPL: New Perspectives on Prosody
@@ -59,26 +65,33 @@ Developing the emotional speech collection system through language games highlig
 Moving to Aix-Marseille University and working with Dr. Leonardo Lancia has opened new avenues in my research:
 
 ### Prosody as Dynamic Coordination
+
 The "Prosody AS Dynamic COordinative Device" project frames prosody not just as a linguistic feature, but as a real-time coordination mechanism between speakers. This perspective has profound implications for:
+
 - Understanding autism spectrum communication differences
-- Developing more natural speech synthesis systems  
+- Developing more natural speech synthesis systems
 - Designing effective language learning tools
 
 ### Cross-linguistic Perspectives
+
 Working in a French research environment while studying cross-linguistic prosodic patterns has given me firsthand experience of the phenomena I study. The subtle prosodic adjustments I make when switching between English, Mandarin, and French in daily life inform my theoretical understanding in ways that monolingual research environments couldn't provide.
 
 ## Lessons for Emerging Researchers
 
 ### 1. Embrace Interdisciplinarity
+
 The most interesting research questions exist at the boundaries between fields. Don't be afraid to learn new methods, attend conferences outside your primary field, and collaborate with researchers from different backgrounds.
 
 ### 2. Balance Theory and Application
+
 Pure theoretical research and applied development both have their place, but the most impactful work often bridges both. My speech entrainment research became more robust when I had to make it work in real-world applications.
 
 ### 3. Document Everything
+
 Research is inherently collaborative and iterative. The analysis script you write today will be invaluable to a collaborator (or future you) next year. Good documentation and reproducible workflows aren't just good practice—they're essential for meaningful scientific progress.
 
 ### 4. Stay Connected to the Bigger Picture
+
 It's easy to get lost in technical details, but regularly stepping back to consider the broader implications of your work helps maintain motivation and identify new research directions.
 
 ## Looking Forward: The Next Chapter
@@ -86,12 +99,15 @@ It's easy to get lost in technical details, but regularly stepping back to consi
 As I continue my research at LPL, I'm excited about several emerging directions:
 
 ### Integration with Large Language Models
+
 How can we incorporate understanding of prosodic coordination into next-generation conversational AI systems? The challenge is maintaining the nuanced, context-sensitive nature of human prosodic patterns while scaling to diverse applications.
 
 ### Clinical Applications
+
 Speech entrainment research has direct implications for understanding and treating communication disorders. I'm particularly interested in developing assessment tools that can track therapeutic progress in naturalistic conversation settings.
 
 ### Cultural and Social Dimensions
+
 Prosodic coordination patterns vary across cultures and social contexts in ways we're only beginning to understand. Future research needs to embrace this diversity rather than treating it as noise to be controlled for.
 
 ## Final Thoughts
@@ -104,4 +120,4 @@ The future of speech science lies in understanding not just how we produce and p
 
 ---
 
-*What challenges have you faced in your research journey? I'd love to hear about your experiences in the comments below.*
+_What challenges have you faced in your research journey? I'd love to hear about your experiences in the comments below._

@@ -16,11 +16,13 @@ This project focuses on developing deep neural network architectures for automat
 Speech entrainment is also termed **phonetic convergence**, **iterative alignment**, or **speech accommodation**. While speech entrainment has been studied in psychology and linguistics, the use of deep learning techniques to automatically detect and analyze this phenomenon is relatively novel. This project aims to bridge this gap by leveraging advanced neural network architectures to analyze speech data and identify patterns of entrainment.
 
 ## Key Features
+
 - **Siamese Recurrent Neural Network (RNN)**: A specialized neural network architecture designed to measure phonetic convergence in speech.
 - **Text-Independent Model**: The Siamese RNN is designed to be text-independent, allowing it to handle variability in speaker characteristics and linguistic backgrounds.
 - **Scalability**: The model can scale to different languages and speaker groups, making it applicable in diverse linguistic contexts.
 
 ## Dataset
+
 The study builds upon a specially curated dataset known as the alternating reading task (ART). This dataset includes speech samples from 58 speakers of different native languages (Italian, French, Slovak) engaged in a controlled reading task. The ART dataset has **solo**, **interactive**, and **imitation** conditions, allowing for a comprehensive analysis of speech entrainment across different conversational contexts.
 
 ## Technical Implementation
@@ -53,7 +55,9 @@ This work contributed to the European Union's **Conversational Brains** project,
 - Communication disorders research
 
 ## Publications
+
 <!-- show publications, uncomment relevant lines in <page.liquid> -->
+
 [The ART of Conversation: Measuring Phonetic Convergence and Deliberate Imitation in L2-Speech with a Siamese RNN](https://www.isca-speech.org/archive/interspeech_2023/yuan23b_interspeech.html)
 
 <!-- {% bibliography --cited %} -->

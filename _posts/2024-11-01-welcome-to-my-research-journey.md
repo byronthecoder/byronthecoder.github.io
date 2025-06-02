@@ -24,19 +24,25 @@ This blog serves as a platform to:
 Currently, I'm working on the "**Prosody AS Dynamic COordinative Device**" project, investigating how speakers coordinate their prosodic patterns during natural conversation. This work combines:
 
 ### Deep Learning & Speech Processing
+
 Using advanced neural network architectures to model complex temporal patterns in speech signals, particularly focusing on:
+
 - Multi-scale prosodic feature extraction
 - Real-time entrainment detection
 - Cross-linguistic pattern analysis
 
 ### Neurolinguistic Mechanisms
+
 Understanding the brain mechanisms underlying speech interaction through:
+
 - EEG and fMRI signal analysis
 - Computational modeling of neural synchronization
 - Cross-modal integration studies
 
 ### Applied AI for Communication
+
 Developing practical applications that enhance human-computer interaction:
+
 - Conversational AI systems with natural prosodic patterns
 - Speech therapy tools for communication disorders
 - Educational technologies for language learning
@@ -54,6 +60,7 @@ In upcoming posts, you'll find:
 ## Join the Conversation
 
 I believe in the power of collaborative research and open dialogue. Feel free to:
+
 - Comment on posts with your thoughts and questions
 - Share your own experiences in related research areas
 - Suggest topics you'd like me to explore
@@ -67,4 +74,4 @@ Thank you for joining me on this journey. Let's explore the beautiful complexity
 
 ---
 
-*Feel free to reach out if you have questions about my research or would like to discuss potential collaborations. You can find my contact information on the [about page](/about/).*
+_Feel free to reach out if you have questions about my research or would like to discuss potential collaborations. You can find my contact information on the [about page](/about/)._

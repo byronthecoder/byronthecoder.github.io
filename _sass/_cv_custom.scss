@@ -4,7 +4,7 @@
 
 // Container for CV content
 .cv-container {
-  width: 100% !important;  // Always use full width of parent
+  width: 100% !important; // Always use full width of parent
 }
 
 // Wide layout option (enabled by default)
@@ -37,7 +37,7 @@
     width: 120px !important;
     min-width: 120px !important;
   }
-  
+
   .cv-content-column {
     width: calc(100% - 120px) !important;
   }

@@ -17,11 +17,13 @@ The Prosody Analysis Framework is a comprehensive toolkit for analyzing prosodic
 ## Core Features
 
 ### Dynamic Prosodic Analysis
+
 - **Real-time Prosody Extraction**: Advanced algorithms for extracting fundamental frequency, intensity, and timing patterns
 - **Syllable-level Analysis**: Detailed examination of prosodic structures at syllable boundaries
 - **Word-level Coordination**: Investigation of prosodic coordination across word boundaries
 
 ### Deep Learning Integration
+
 - **Neural Prosody Models**: Custom architectures for prosodic pattern recognition
 - **Temporal Dynamics**: Modeling of prosodic changes over conversational time
 - **Cross-speaker Analysis**: Comparative prosodic analysis between conversation partners
@@ -50,7 +52,7 @@ import prosody_framework as pf
 # Load audio and extract features
 audio_data = pf.load_audio("conversation.wav")
 prosodic_features = pf.extract_prosody(
-    audio_data, 
+    audio_data,
     features=['f0', 'intensity', 'duration'],
     window_size=0.025,
     hop_length=0.010
@@ -62,6 +64,7 @@ coordination_scores = model.predict(prosodic_features)
 ```
 
 ### Key Technologies
+
 - **Python**: Core development language
 - **TensorFlow/Keras**: Deep learning implementation
 - **Parselmouth**: Praat integration for Python
@@ -71,13 +74,17 @@ coordination_scores = model.predict(prosodic_features)
 ## Research Applications
 
 ### Speech Interaction Mechanisms
+
 Understanding how speakers coordinate prosodic patterns during natural conversation, revealing insights into:
+
 - Turn-taking behaviors
 - Emotional synchronization
 - Social bonding through speech
 
 ### Clinical Applications
+
 Potential applications in:
+
 - Speech therapy assessment
 - Communication disorder diagnosis
 - Social skill training programs
@@ -85,6 +92,7 @@ Potential applications in:
 ## Current Research
 
 This ongoing project at **Laboratoire Parole et Langage (LPL)** focuses on:
+
 - Neural mechanisms of prosodic coordination
 - Cross-linguistic prosodic patterns
 - Real-time prosodic feedback systems
@@ -94,6 +102,7 @@ This ongoing project at **Laboratoire Parole et Langage (LPL)** focuses on:
 ## Collaboration
 
 This project is part of the research initiative "**Prosody AS Dynamic COordinative Device**" in collaboration with:
+
 - Dr. Leonardo Lancia (LPL, Aix-Marseille University)
 - Laboratoire Parole et Langage research team
 - International speech processing community
