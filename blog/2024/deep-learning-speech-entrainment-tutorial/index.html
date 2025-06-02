@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Deep Learning for Speech Entrainment Detection - A Practical Guide | Zheng Yuan </title> <meta name="author" content="Zheng Byron Yuan"> <meta name="description" content="Step-by-step tutorial on implementing neural networks for speech entrainment analysis"> <meta name="keywords" content="psycholinguistics, neurolinguistics, Artificial Intelligence, speech science, academic"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link defer href="/assets/css/bootstrap-toc.min.css?6f5af0bb9aab25d79b2448143cbeaa88" rel="stylesheet"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://yuan-zheng.net/blog/2024/deep-learning-speech-entrainment-tutorial/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Deep Learning for Speech Entrainment Detection - A Practical Guide | Zheng Yuan </title> <meta name="author" content="Zheng Byron Yuan"> <meta name="description" content="Step-by-step tutorial on implementing neural networks for speech entrainment analysis"> <meta name="keywords" content="psycholinguistics, neurolinguistics, Artificial Intelligence, speech science, academic"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?59683d8d628e6717785b508ec539c429"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?9dbe0c76bacd463500b79ed6a86e27ac"> <link defer rel="stylesheet" href="/assets/css/scholar-icons.css?62b2ac103a88034e6882a5be5f3e2772"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link defer href="/assets/css/bootstrap-toc.min.css?771920573e5f7efee19e36fbd8b06c1f" rel="stylesheet"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://yuan-zheng.net/blog/2024/deep-learning-speech-entrainment-tutorial/"> <script src="/assets/js/theme.js?a81d82887dd692e91686b43de4542f18"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Zheng Yuan </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="row"> <div class="col-sm-3"> <nav id="toc-sidebar" class="sticky-top"></nav> </div> <div class="col-sm-9"> <div class="post"> <header class="post-header"> <h1 class="post-title">Deep Learning for Speech Entrainment Detection - A Practical Guide</h1> <p class="post-meta"> Created on November 15, 2024 </p> <p class="post-tags"> <a href="/blog/2024"> <i class="fa-solid fa-calendar fa-sm"></i> 2024 </a>   ·   <a href="/blog/tag/tutorials"> <i class="fa-solid fa-hashtag fa-sm"></i> tutorials</a>   <a href="/blog/tag/speech-science"> <i class="fa-solid fa-hashtag fa-sm"></i> speech-science</a>   <a href="/blog/tag/ai"> <i class="fa-solid fa-hashtag fa-sm"></i> AI</a>   <a href="/blog/tag/deep-learning"> <i class="fa-solid fa-hashtag fa-sm"></i> deep-learning</a>   <a href="/blog/tag/python"> <i class="fa-solid fa-hashtag fa-sm"></i> python</a>   ·   <a href="/blog/category/tutorials"> <i class="fa-solid fa-tag fa-sm"></i> tutorials</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <p>Speech entrainment—the unconscious tendency for speakers to adapt their speech patterns to match their conversation partners—is a fundamental aspect of human communication. In this tutorial, I’ll walk you through implementing a deep learning system to automatically detect these phenomena.</p> <h2 id="introduction">Introduction</h2> <p>During my PhD research on the EU’s Conversational Brains project, I developed neural network architectures specifically designed for speech entrainment detection. This post shares the key insights and provides practical implementation guidance.</p> <h2 id="what-is-speech-entrainment">What is Speech Entrainment?</h2> <p>Speech entrainment manifests in multiple dimensions:</p> <ul> <li> <strong>Acoustic</strong>: Matching of fundamental frequency, intensity, and spectral properties</li> <li> <strong>Prosodic</strong>: Coordination of rhythm, stress patterns, and intonation</li> <li> <strong>Temporal</strong>: Synchronization of speaking rate and pause patterns</li> <li> <strong>Linguistic</strong>: Convergence in lexical choices and syntactic structures</li> </ul> <h2 id="system-architecture">System Architecture</h2> <p>Our approach uses a multi-modal neural network that processes different aspects of speech simultaneously:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
 <span class="kn">import</span> <span class="n">torch.nn</span> <span class="k">as</span> <span class="n">nn</span>
@@ -7,13 +7,13 @@
 <span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span>
 
 <span class="k">class</span> <span class="nc">SpeechEntrainmentDetector</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> 
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span>
                  <span class="n">acoustic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">128</span><span class="p">,</span>
                  <span class="n">prosodic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span>
                  <span class="n">temporal_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span>
                  <span class="n">hidden_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">256</span><span class="p">):</span>
         <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
-        
+
         <span class="c1"># Acoustic feature encoder
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">acoustic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">acoustic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">),</span>
@@ -21,7 +21,7 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Prosodic feature encoder
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">prosodic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">prosodic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
@@ -29,7 +29,7 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">4</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Temporal dynamics module
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">temporal_lstm</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">LSTM</span><span class="p">(</span>
             <span class="n">input_size</span><span class="o">=</span><span class="n">temporal_dim</span><span class="p">,</span>
@@ -38,14 +38,14 @@
             <span class="n">dropout</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
             <span class="n">bidirectional</span><span class="o">=</span><span class="bp">True</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Cross-modal attention
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">attention</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">MultiheadAttention</span><span class="p">(</span>
             <span class="n">embed_dim</span><span class="o">=</span><span class="n">hidden_dim</span><span class="p">,</span>
             <span class="n">num_heads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
             <span class="n">dropout</span><span class="o">=</span><span class="mf">0.1</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Entrainment classifier
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
@@ -54,33 +54,33 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Sigmoid</span><span class="p">()</span>
         <span class="p">)</span>
-    
+
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">acoustic_features</span><span class="p">,</span> <span class="n">prosodic_features</span><span class="p">,</span> <span class="n">temporal_features</span><span class="p">):</span>
         <span class="c1"># Encode different feature types
 </span>        <span class="n">acoustic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">acoustic_encoder</span><span class="p">(</span><span class="n">acoustic_features</span><span class="p">)</span>
         <span class="n">prosodic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">prosodic_encoder</span><span class="p">(</span><span class="n">prosodic_features</span><span class="p">)</span>
-        
+
         <span class="c1"># Process temporal dynamics
 </span>        <span class="n">temporal_encoded</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">temporal_lstm</span><span class="p">(</span><span class="n">temporal_features</span><span class="p">)</span>
         <span class="n">temporal_encoded</span> <span class="o">=</span> <span class="n">temporal_encoded</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Global temporal representation
-</span>        
+</span>
         <span class="c1"># Combine features
 </span>        <span class="n">combined_features</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">cat</span><span class="p">([</span>
-            <span class="n">acoustic_encoded</span><span class="p">,</span> 
-            <span class="n">prosodic_encoded</span><span class="p">,</span> 
+            <span class="n">acoustic_encoded</span><span class="p">,</span>
+            <span class="n">prosodic_encoded</span><span class="p">,</span>
             <span class="n">temporal_encoded</span>
         <span class="p">],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-        
+
         <span class="c1"># Apply attention mechanism
 </span>        <span class="n">attended_features</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">attention</span><span class="p">(</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Classify entrainment
 </span>        <span class="n">entrainment_score</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">classifier</span><span class="p">(</span><span class="n">attended_features</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-        
+
         <span class="k">return</span> <span class="n">entrainment_score</span>
 </code></pre></div></div> <h2 id="feature-extraction-pipeline">Feature Extraction Pipeline</h2> <p>The key to successful entrainment detection lies in extracting meaningful features from speech signals:</p> <h3 id="acoustic-features">Acoustic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_acoustic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">16000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sh">"""</span><span class="s">
@@ -88,34 +88,34 @@
     </span><span class="sh">"""</span>
     <span class="c1"># Load audio
 </span>    <span class="n">y</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
-    
+
     <span class="c1"># Extract features
 </span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="c1"># MFCCs (13 coefficients)
 </span>    <span class="n">mfccs</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">mfcc</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">n_mfcc</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-    
+
     <span class="c1"># Spectral features
 </span>    <span class="n">spectral_centroids</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_centroid</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">spectral_rolloff</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_rolloff</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">spectral_bandwidth</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_bandwidth</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
-    
+
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
         <span class="n">spectral_centroids</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
         <span class="n">spectral_rolloff</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
         <span class="n">spectral_bandwidth</span><span class="p">.</span><span class="nf">mean</span><span class="p">()</span>
     <span class="p">])</span>
-    
+
     <span class="c1"># Zero crossing rate
 </span>    <span class="n">zcr</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">zero_crossing_rate</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">zcr</span><span class="p">.</span><span class="nf">mean</span><span class="p">())</span>
-    
+
     <span class="c1"># Chromagram
 </span>    <span class="n">chroma</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">chroma_stft</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="n">chroma</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-    
+
     <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 </code></pre></div></div> <h3 id="prosodic-features">Prosodic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_prosodic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sh">"""</span><span class="s">
@@ -126,21 +126,21 @@
         <span class="kn">from</span> <span class="n">parselmouth.praat</span> <span class="kn">import</span> <span class="n">call</span>
     <span class="k">except</span> <span class="nb">ImportError</span><span class="p">:</span>
         <span class="k">raise</span> <span class="nc">ImportError</span><span class="p">(</span><span class="sh">"</span><span class="s">Please install parselmouth: pip install praat-parselmouth</span><span class="sh">"</span><span class="p">)</span>
-    
+
     <span class="n">sound</span> <span class="o">=</span> <span class="n">parselmouth</span><span class="p">.</span><span class="nc">Sound</span><span class="p">(</span><span class="n">audio_path</span><span class="p">)</span>
-    
+
     <span class="c1"># Fundamental frequency analysis
 </span>    <span class="n">f0</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_pitch_ac</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">pitch_floor</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">pitch_ceiling</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
     <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0</span><span class="p">.</span><span class="n">selected_array</span><span class="p">[</span><span class="sh">'</span><span class="s">frequency</span><span class="sh">'</span><span class="p">]</span>
     <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0_values</span><span class="p">[</span><span class="n">f0_values</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># Remove unvoiced frames
-</span>    
+</span>
     <span class="c1"># Intensity analysis
 </span>    <span class="n">intensity</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_intensity</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
     <span class="n">intensity_values</span> <span class="o">=</span> <span class="n">intensity</span><span class="p">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    
+
     <span class="c1"># Calculate prosodic statistics
 </span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">f0_values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
             <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">f0_values</span><span class="p">),</span>
@@ -150,13 +150,13 @@
 </span>        <span class="p">])</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-    
+
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">min</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span>
     <span class="p">])</span>
-    
+
     <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 </code></pre></div></div> <h2 id="training-the-model">Training the Model</h2> <p>Here’s how to train the entrainment detection model:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">train_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
     <span class="sh">"""</span><span class="s">
@@ -167,50 +167,50 @@
     <span class="n">scheduler</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">optim</span><span class="p">.</span><span class="n">lr_scheduler</span><span class="p">.</span><span class="nc">ReduceLROnPlateau</span><span class="p">(</span>
         <span class="n">optimizer</span><span class="p">,</span> <span class="n">patience</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">factor</span><span class="o">=</span><span class="mf">0.5</span>
     <span class="p">)</span>
-    
+
     <span class="n">best_val_loss</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="sh">'</span><span class="s">inf</span><span class="sh">'</span><span class="p">)</span>
-    
+
     <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
         <span class="c1"># Training phase
 </span>        <span class="n">model</span><span class="p">.</span><span class="nf">train</span><span class="p">()</span>
         <span class="n">train_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
-        
+
         <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">train_loader</span><span class="p">):</span>
             <span class="n">optimizer</span><span class="p">.</span><span class="nf">zero_grad</span><span class="p">()</span>
-            
+
             <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
             <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
-            
+
             <span class="n">loss</span><span class="p">.</span><span class="nf">backward</span><span class="p">()</span>
             <span class="n">optimizer</span><span class="p">.</span><span class="nf">step</span><span class="p">()</span>
-            
+
             <span class="n">train_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
-        
+
         <span class="c1"># Validation phase
 </span>        <span class="n">model</span><span class="p">.</span><span class="nf">eval</span><span class="p">()</span>
         <span class="n">val_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
         <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-        
+
         <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="nf">no_grad</span><span class="p">():</span>
             <span class="k">for</span> <span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">val_loader</span><span class="p">:</span>
                 <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
                 <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
                 <span class="n">val_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
-                
+
                 <span class="c1"># Calculate accuracy
 </span>                <span class="n">predicted</span> <span class="o">=</span> <span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">).</span><span class="nf">long</span><span class="p">()</span>
                 <span class="n">total</span> <span class="o">+=</span> <span class="n">labels</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
                 <span class="n">correct</span> <span class="o">+=</span> <span class="p">(</span><span class="n">predicted</span> <span class="o">==</span> <span class="n">labels</span><span class="p">).</span><span class="nf">sum</span><span class="p">().</span><span class="nf">item</span><span class="p">()</span>
-        
+
         <span class="c1"># Learning rate scheduling
 </span>        <span class="n">scheduler</span><span class="p">.</span><span class="nf">step</span><span class="p">(</span><span class="n">val_loss</span><span class="p">)</span>
-        
+
         <span class="c1"># Save best model
 </span>        <span class="k">if</span> <span class="n">val_loss</span> <span class="o">&lt;</span> <span class="n">best_val_loss</span><span class="p">:</span>
             <span class="n">best_val_loss</span> <span class="o">=</span> <span class="n">val_loss</span>
             <span class="n">torch</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nf">state_dict</span><span class="p">(),</span> <span class="sh">'</span><span class="s">best_entrainment_model.pth</span><span class="sh">'</span><span class="p">)</span>
-        
+
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Epoch </span><span class="si">{</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">epochs</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">)</span>
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Train Loss: </span><span class="si">{</span><span class="n">train_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Val Loss: </span><span class="si">{</span><span class="n">val_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">val_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
@@ -220,16 +220,16 @@
     Select AI responses that promote natural entrainment patterns.
     </span><span class="sh">"""</span>
     <span class="n">entrainment_scores</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">for</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="n">ai_response_candidates</span><span class="p">:</span>
         <span class="c1"># Extract features from user speech and candidate response
 </span>        <span class="n">user_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">user_speech</span><span class="p">)</span>
         <span class="n">candidate_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
-        
+
         <span class="c1"># Predict entrainment compatibility
 </span>        <span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">predict_entrainment</span><span class="p">(</span><span class="n">user_features</span><span class="p">,</span> <span class="n">candidate_features</span><span class="p">)</span>
         <span class="n">entrainment_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-    
+
     <span class="c1"># Select response with optimal entrainment score
 </span>    <span class="n">best_response_idx</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">argmax</span><span class="p">(</span><span class="n">entrainment_scores</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ai_response_candidates</span><span class="p">[</span><span class="n">best_response_idx</span><span class="p">]</span>
@@ -238,19 +238,19 @@
     Track patient progress in developing natural entrainment patterns.
     </span><span class="sh">"""</span>
     <span class="n">progress_scores</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="n">patient_sessions</span><span class="p">:</span>
         <span class="n">therapist_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">therapist</span><span class="sh">'</span><span class="p">]</span>
         <span class="n">patient_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">patient</span><span class="sh">'</span><span class="p">]</span>
-        
+
         <span class="n">entrainment_score</span> <span class="o">=</span> <span class="nf">detect_entrainment</span><span class="p">(</span><span class="n">therapist_speech</span><span class="p">,</span> <span class="n">patient_speech</span><span class="p">)</span>
         <span class="n">progress_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">entrainment_score</span><span class="p">)</span>
-    
+
     <span class="k">return</span> <span class="p">{</span>
         <span class="sh">'</span><span class="s">overall_progress</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">),</span>
         <span class="sh">'</span><span class="s">trend</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">polyfit</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">)),</span> <span class="n">progress_scores</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span>
         <span class="sh">'</span><span class="s">individual_scores</span><span class="sh">'</span><span class="p">:</span> <span class="n">progress_scores</span>
     <span class="p">}</span>
-</code></pre></div></div> <h2 id="performance-and-results">Performance and Results</h2> <p>In our evaluation on conversational speech corpora:</p> <ul> <li> <strong>Accuracy</strong>: 94.2% on held-out test set</li> <li> <strong>Precision</strong>: 92.8% for entrainment detection</li> <li> <strong>Recall</strong>: 95.1% for entrainment detection</li> <li> <strong>Processing Speed</strong>: Real-time capability (&lt; 100ms latency)</li> </ul> <h2 id="future-directions">Future Directions</h2> <p>Current research focuses on:</p> <ul> <li> <strong>Multilingual entrainment patterns</strong> across different language families</li> <li> <strong>Real-time feedback systems</strong> for communication training</li> <li> <strong>Integration with large language models</strong> for more sophisticated conversational AI</li> </ul> <h2 id="conclusion">Conclusion</h2> <p>Speech entrainment detection represents a crucial step toward understanding human communication dynamics. The deep learning approach presented here provides a robust foundation for both research applications and practical systems.</p> <p>The complete code and pre-trained models are available on <a href="https://github.com/byronthecoder/speech-entrainment" rel="external nofollow noopener" target="_blank">GitHub</a>. Feel free to experiment with your own data and contribute to the project!</p> <hr> <p><em>Next week, I’ll be writing about prosodic analysis techniques. Stay tuned!</em></p> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Zheng Byron Yuan. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script defer src="/assets/js/bootstrap-toc.min.js?c82ff4de8b0955d6ff14f5b05eed7eb6"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>
+</code></pre></div></div> <h2 id="performance-and-results">Performance and Results</h2> <p>In our evaluation on conversational speech corpora:</p> <ul> <li> <strong>Accuracy</strong>: 94.2% on held-out test set</li> <li> <strong>Precision</strong>: 92.8% for entrainment detection</li> <li> <strong>Recall</strong>: 95.1% for entrainment detection</li> <li> <strong>Processing Speed</strong>: Real-time capability (&lt; 100ms latency)</li> </ul> <h2 id="future-directions">Future Directions</h2> <p>Current research focuses on:</p> <ul> <li> <strong>Multilingual entrainment patterns</strong> across different language families</li> <li> <strong>Real-time feedback systems</strong> for communication training</li> <li> <strong>Integration with large language models</strong> for more sophisticated conversational AI</li> </ul> <h2 id="conclusion">Conclusion</h2> <p>Speech entrainment detection represents a crucial step toward understanding human communication dynamics. The deep learning approach presented here provides a robust foundation for both research applications and practical systems.</p> <p>The complete code and pre-trained models are available on <a href="https://github.com/byronthecoder/speech-entrainment" rel="external nofollow noopener" target="_blank">GitHub</a>. Feel free to experiment with your own data and contribute to the project!</p> <hr> <p><em>Next week, I’ll be writing about prosodic analysis techniques. Stay tuned!</em></p> </div> </article> </div> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2025 Zheng Byron Yuan. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?a0db7e5d5c70cc3252b3138b0c91dcaf" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script defer src="/assets/js/bootstrap-toc.min.js?9bdd33e866d401a2c33d948c2984c629"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/js/mathjax-setup.js?a5bb4e6a542c546dd929b24b8b236dfd"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script defer src="/assets/js/progress-bar.js?2f30e0e6801ea8f5036fa66e1ab0a71a" type="text/javascript"></script> <script src="/assets/js/vanilla-back-to-top.min.js?e608dd299131d590d2d72f939ef62f8b"></script> <script>
     addBackToTop();
-  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?a3446f084dcaecc5f75aa1757d087dcf"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>
+  </script> <script type="module" src="/assets/js/search/ninja-keys.min.js?93f9655b46c401880bdc45f3fcc64817"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/js/search-setup.js?6c304f7b1992d4b60f7a07956e52f04a"></script> <script src="/assets/js/search-data.js"></script> <script src="/assets/js/shortcut-key.js?6f508d74becd347268a7f822bca7309d"></script> </body> </html>

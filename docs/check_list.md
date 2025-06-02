@@ -3,18 +3,21 @@
 ## 📋 Phase 1: Foundation Setup (Week 1-2)
 
 ### Environment Setup
+
 - [x] Install Ruby, Bundler, and Jekyll dependencies
 - [x] Clone repository and test local build
 - [x] Verify site loads at `http://localhost:4000` (using `bundle exec jekyll serve`)
 - [x] Test hot-reload functionality for development
 
 ### Repository Configuration
+
 - [ ] Set up GitHub repository permissions
 - [ ] Configure GitHub Pages in repository settings
 - [ ] Test deployment pipeline
 - [ ] Set up branch protection rules (optional)
 
 ### Basic Site Configuration
+
 - [ ] Update `_config.yml` with personal information
   - [x] Site title and description
   - [x] Personal name (first, middle, last)
@@ -34,7 +37,8 @@
 ## 📄 Phase 2: Core Content Pages (Week 2-4)
 
 ### About Page (`_pages/about.md`)
-- [X] Update personal biography
+
+- [x] Update personal biography
 - [x] Add research interests and current position
 - [x] Upload professional photo (`assets/img/prof_pic.jpg`)
 - [x] Configure profile image settings (circular/rectangular)
@@ -44,6 +48,7 @@
 - [x] Configure selected papers display
 
 ### Publications Page (`_pages/publications.md`)
+
 - [x] Enable publications page in navigation (`nav: true`)
 - [x] Set up bibliography file (`_bibliography/papers.bib`)
   - [x] Clear fake/template publications data
@@ -59,6 +64,7 @@
 - [x] Set up publication sorting (by year, importance)
 
 ### CV Page (`_pages/cv.md`)
+
 - [x] Enable CV page in navigation (`nav: true`)
 - [x] Remove description text from CV page
 - [x] Fix text overlapping issues in Experience section
@@ -80,6 +86,7 @@
 - [x] Set up table of contents sidebar
 
 ### Projects Page (`_pages/projects.md`)
+
 - [x] Enable projects page in navigation (`nav: true`)
 - [x] Plan project categories (research, work, fun)
 - [x] Create individual project files in `_projects/`
@@ -104,6 +111,7 @@
 ## 📝 Phase 3: Content Expansion (Week 4-6)
 
 ### Blog Setup
+
 - [x] Enable blog functionality in `_config.yml`
 - [x] Configure pagination settings
 - [x] Set up blog categories and tags (research, tutorials, thoughts)
@@ -119,6 +127,7 @@
 - [x] Update blog name and description to be research-focused
 
 ### Teaching Page (`_pages/teaching.md`)
+
 - [x] Enable teaching page in navigation (`nav: true`)
 - [x] Update teaching philosophy and approach
 - [x] Add current and past teaching experience
@@ -132,6 +141,7 @@
 - [ ] Consider creating a courses collection
 
 ### News Section
+
 - [ ] Create news items in `_news/`
   - [ ] Recent research achievements
   - [ ] Conference presentations
@@ -145,6 +155,7 @@
 ## 🚀 Phase 4: Advanced Features (Week 6-8)
 
 ### SEO and Performance
+
 - [ ] Configure meta descriptions for all pages
 - [ ] Set up Open Graph tags
 - [ ] Add Schema.org structured data
@@ -157,6 +168,7 @@
 - [ ] Test site loading speeds
 
 ### Analytics Integration
+
 - [ ] Set up Google Analytics 4
   - [ ] Create GA4 property
   - [ ] Add tracking code to `_config.yml`
@@ -168,6 +180,7 @@
   - [ ] Configure publication metrics display
 
 ### Interactive Features
+
 - [ ] Enable site-wide search functionality
 - [ ] Configure search for posts and publications
 - [ ] Test search performance and relevance
@@ -180,6 +193,7 @@
 ## 📊 Phase 5: Monitoring and Analytics (Week 8-10)
 
 ### Visitor Analytics Setup
+
 - [ ] Create comprehensive analytics dashboard
 - [ ] Set up custom Google Analytics reports
   - [ ] Page popularity tracking
@@ -193,6 +207,7 @@
   - [ ] Newsletter signups (if enabled)
 
 ### Academic Impact Tracking
+
 - [ ] Monitor publication page views
 - [ ] Track PDF download statistics
 - [ ] Set up referral tracking from academic databases
@@ -200,6 +215,7 @@
 - [ ] Create monthly analytics reports
 
 ### Performance Monitoring
+
 - [ ] Set up Lighthouse CI for performance monitoring
 - [ ] Configure uptime monitoring service
 - [ ] Monitor site loading speeds across devices
@@ -211,6 +227,7 @@
 ## 🔄 Phase 6: Maintenance and Growth (Ongoing)
 
 ### Content Management
+
 - [ ] Establish content update schedule
   - [ ] Weekly blog posts (if maintaining blog)
   - [ ] Monthly publications updates
@@ -221,6 +238,7 @@
 - [ ] Monitor template updates
 
 ### Community Engagement
+
 - [ ] Share new content on social media
 - [ ] Engage with academic Twitter/LinkedIn
 - [ ] Participate in academic discussions
@@ -228,6 +246,7 @@
 - [ ] Network with other researchers using al-folio
 
 ### Technical Maintenance
+
 - [ ] Regular dependency updates
 - [ ] Security monitoring
 - [ ] Performance optimization
@@ -239,33 +258,39 @@
 ## 🎯 Success Checkpoints
 
 ### Phase 1 Complete ✅
+
 - [ ] Site builds locally without errors
 - [ ] Basic information displays correctly
 - [ ] Social media links work
 
 ### Phase 2 Complete ✅
+
 - [ ] All four core pages have real content
 - [ ] Publications display correctly with proper formatting
 - [ ] CV sections are populated and PDF downloads
 - [ ] Projects showcase your work effectively
 
 ### Phase 3 Complete ✅
+
 - [ ] Blog is functional with at least 3 posts
 - [ ] Teaching page reflects your experience
 - [ ] News section displays recent updates
 
 ### Phase 4 Complete ✅
+
 - [ ] Google Analytics tracking works
 - [ ] SEO optimizations implemented
 - [ ] Site search functions properly
 - [ ] Academic metrics display correctly
 
 ### Phase 5 Complete ✅
+
 - [ ] Analytics dashboard provides meaningful insights
 - [ ] Performance monitoring alerts work
 - [ ] Academic impact metrics are tracked
 
 ### Phase 6 Ongoing ✅
+
 - [ ] Content updated regularly
 - [ ] Community engagement active
 - [ ] Technical health maintained

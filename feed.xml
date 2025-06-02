@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yuan-zheng.net/feed.xml" rel="self" type="application/atom+xml"/><link href="https://yuan-zheng.net/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-06-02T11:07:40+00:00</updated><id>https://yuan-zheng.net/feed.xml</id><title type="html">Zheng Yuan</title><subtitle>This is my academic page where I show my research, projects, blog, and more. </subtitle><entry><title type="html">a post with plotly.js</title><link href="https://yuan-zheng.net/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://yuan-zheng.net/blog/2025/plotly</id><content type="html" xml:base="https://yuan-zheng.net/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yuan-zheng.net/feed.xml" rel="self" type="application/atom+xml"/><link href="https://yuan-zheng.net/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-06-02T11:22:10+00:00</updated><id>https://yuan-zheng.net/feed.xml</id><title type="html">Zheng Yuan</title><subtitle>This is my academic page where I show my research, projects, blog, and more. </subtitle><entry><title type="html">a post with plotly.js</title><link href="https://yuan-zheng.net/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://yuan-zheng.net/blog/2025/plotly</id><content type="html" xml:base="https://yuan-zheng.net/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
 </span><span class="sb">{
   "data": [
     {
@@ -85,13 +85,13 @@
 <span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span>
 
 <span class="k">class</span> <span class="nc">SpeechEntrainmentDetector</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> 
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span>
                  <span class="n">acoustic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">128</span><span class="p">,</span>
                  <span class="n">prosodic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span>
                  <span class="n">temporal_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span>
                  <span class="n">hidden_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">256</span><span class="p">):</span>
         <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
-        
+
         <span class="c1"># Acoustic feature encoder
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">acoustic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">acoustic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">),</span>
@@ -99,7 +99,7 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Prosodic feature encoder
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">prosodic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">prosodic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
@@ -107,7 +107,7 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">4</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Temporal dynamics module
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">temporal_lstm</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">LSTM</span><span class="p">(</span>
             <span class="n">input_size</span><span class="o">=</span><span class="n">temporal_dim</span><span class="p">,</span>
@@ -116,14 +116,14 @@
             <span class="n">dropout</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
             <span class="n">bidirectional</span><span class="o">=</span><span class="bp">True</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Cross-modal attention
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">attention</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">MultiheadAttention</span><span class="p">(</span>
             <span class="n">embed_dim</span><span class="o">=</span><span class="n">hidden_dim</span><span class="p">,</span>
             <span class="n">num_heads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
             <span class="n">dropout</span><span class="o">=</span><span class="mf">0.1</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Entrainment classifier
 </span>        <span class="n">self</span><span class="p">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
@@ -132,33 +132,33 @@
             <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
             <span class="n">nn</span><span class="p">.</span><span class="nc">Sigmoid</span><span class="p">()</span>
         <span class="p">)</span>
-    
+
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">acoustic_features</span><span class="p">,</span> <span class="n">prosodic_features</span><span class="p">,</span> <span class="n">temporal_features</span><span class="p">):</span>
         <span class="c1"># Encode different feature types
 </span>        <span class="n">acoustic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">acoustic_encoder</span><span class="p">(</span><span class="n">acoustic_features</span><span class="p">)</span>
         <span class="n">prosodic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">prosodic_encoder</span><span class="p">(</span><span class="n">prosodic_features</span><span class="p">)</span>
-        
+
         <span class="c1"># Process temporal dynamics
 </span>        <span class="n">temporal_encoded</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">temporal_lstm</span><span class="p">(</span><span class="n">temporal_features</span><span class="p">)</span>
         <span class="n">temporal_encoded</span> <span class="o">=</span> <span class="n">temporal_encoded</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Global temporal representation
-</span>        
+</span>
         <span class="c1"># Combine features
 </span>        <span class="n">combined_features</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">cat</span><span class="p">([</span>
-            <span class="n">acoustic_encoded</span><span class="p">,</span> 
-            <span class="n">prosodic_encoded</span><span class="p">,</span> 
+            <span class="n">acoustic_encoded</span><span class="p">,</span>
+            <span class="n">prosodic_encoded</span><span class="p">,</span>
             <span class="n">temporal_encoded</span>
         <span class="p">],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
-        
+
         <span class="c1"># Apply attention mechanism
 </span>        <span class="n">attended_features</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">attention</span><span class="p">(</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
             <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
         <span class="p">)</span>
-        
+
         <span class="c1"># Classify entrainment
 </span>        <span class="n">entrainment_score</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">classifier</span><span class="p">(</span><span class="n">attended_features</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-        
+
         <span class="k">return</span> <span class="n">entrainment_score</span>
 </code></pre></div></div> <h2 id="feature-extraction-pipeline">Feature Extraction Pipeline</h2> <p>The key to successful entrainment detection lies in extracting meaningful features from speech signals:</p> <h3 id="acoustic-features">Acoustic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_acoustic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">16000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sh">"""</span><span class="s">
@@ -166,34 +166,34 @@
     </span><span class="sh">"""</span>
     <span class="c1"># Load audio
 </span>    <span class="n">y</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
-    
+
     <span class="c1"># Extract features
 </span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="c1"># MFCCs (13 coefficients)
 </span>    <span class="n">mfccs</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">mfcc</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">n_mfcc</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-    
+
     <span class="c1"># Spectral features
 </span>    <span class="n">spectral_centroids</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_centroid</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">spectral_rolloff</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_rolloff</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">spectral_bandwidth</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_bandwidth</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
-    
+
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
         <span class="n">spectral_centroids</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
         <span class="n">spectral_rolloff</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
         <span class="n">spectral_bandwidth</span><span class="p">.</span><span class="nf">mean</span><span class="p">()</span>
     <span class="p">])</span>
-    
+
     <span class="c1"># Zero crossing rate
 </span>    <span class="n">zcr</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">zero_crossing_rate</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">zcr</span><span class="p">.</span><span class="nf">mean</span><span class="p">())</span>
-    
+
     <span class="c1"># Chromagram
 </span>    <span class="n">chroma</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">chroma_stft</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="n">chroma</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
-    
+
     <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 </code></pre></div></div> <h3 id="prosodic-features">Prosodic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_prosodic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
     <span class="sh">"""</span><span class="s">
@@ -204,21 +204,21 @@
         <span class="kn">from</span> <span class="n">parselmouth.praat</span> <span class="kn">import</span> <span class="n">call</span>
     <span class="k">except</span> <span class="nb">ImportError</span><span class="p">:</span>
         <span class="k">raise</span> <span class="nc">ImportError</span><span class="p">(</span><span class="sh">"</span><span class="s">Please install parselmouth: pip install praat-parselmouth</span><span class="sh">"</span><span class="p">)</span>
-    
+
     <span class="n">sound</span> <span class="o">=</span> <span class="n">parselmouth</span><span class="p">.</span><span class="nc">Sound</span><span class="p">(</span><span class="n">audio_path</span><span class="p">)</span>
-    
+
     <span class="c1"># Fundamental frequency analysis
 </span>    <span class="n">f0</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_pitch_ac</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">pitch_floor</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">pitch_ceiling</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
     <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0</span><span class="p">.</span><span class="n">selected_array</span><span class="p">[</span><span class="sh">'</span><span class="s">frequency</span><span class="sh">'</span><span class="p">]</span>
     <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0_values</span><span class="p">[</span><span class="n">f0_values</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># Remove unvoiced frames
-</span>    
+</span>
     <span class="c1"># Intensity analysis
 </span>    <span class="n">intensity</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_intensity</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
     <span class="n">intensity_values</span> <span class="o">=</span> <span class="n">intensity</span><span class="p">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    
+
     <span class="c1"># Calculate prosodic statistics
 </span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">f0_values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
             <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">f0_values</span><span class="p">),</span>
@@ -228,13 +228,13 @@
 </span>        <span class="p">])</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-    
+
     <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
         <span class="n">np</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">min</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span>
     <span class="p">])</span>
-    
+
     <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
 </code></pre></div></div> <h2 id="training-the-model">Training the Model</h2> <p>Here’s how to train the entrainment detection model:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">train_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
     <span class="sh">"""</span><span class="s">
@@ -245,50 +245,50 @@
     <span class="n">scheduler</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">optim</span><span class="p">.</span><span class="n">lr_scheduler</span><span class="p">.</span><span class="nc">ReduceLROnPlateau</span><span class="p">(</span>
         <span class="n">optimizer</span><span class="p">,</span> <span class="n">patience</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">factor</span><span class="o">=</span><span class="mf">0.5</span>
     <span class="p">)</span>
-    
+
     <span class="n">best_val_loss</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="sh">'</span><span class="s">inf</span><span class="sh">'</span><span class="p">)</span>
-    
+
     <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
         <span class="c1"># Training phase
 </span>        <span class="n">model</span><span class="p">.</span><span class="nf">train</span><span class="p">()</span>
         <span class="n">train_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
-        
+
         <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">train_loader</span><span class="p">):</span>
             <span class="n">optimizer</span><span class="p">.</span><span class="nf">zero_grad</span><span class="p">()</span>
-            
+
             <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
             <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
-            
+
             <span class="n">loss</span><span class="p">.</span><span class="nf">backward</span><span class="p">()</span>
             <span class="n">optimizer</span><span class="p">.</span><span class="nf">step</span><span class="p">()</span>
-            
+
             <span class="n">train_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
-        
+
         <span class="c1"># Validation phase
 </span>        <span class="n">model</span><span class="p">.</span><span class="nf">eval</span><span class="p">()</span>
         <span class="n">val_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
         <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
-        
+
         <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="nf">no_grad</span><span class="p">():</span>
             <span class="k">for</span> <span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">val_loader</span><span class="p">:</span>
                 <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
                 <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
                 <span class="n">val_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
-                
+
                 <span class="c1"># Calculate accuracy
 </span>                <span class="n">predicted</span> <span class="o">=</span> <span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">).</span><span class="nf">long</span><span class="p">()</span>
                 <span class="n">total</span> <span class="o">+=</span> <span class="n">labels</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
                 <span class="n">correct</span> <span class="o">+=</span> <span class="p">(</span><span class="n">predicted</span> <span class="o">==</span> <span class="n">labels</span><span class="p">).</span><span class="nf">sum</span><span class="p">().</span><span class="nf">item</span><span class="p">()</span>
-        
+
         <span class="c1"># Learning rate scheduling
 </span>        <span class="n">scheduler</span><span class="p">.</span><span class="nf">step</span><span class="p">(</span><span class="n">val_loss</span><span class="p">)</span>
-        
+
         <span class="c1"># Save best model
 </span>        <span class="k">if</span> <span class="n">val_loss</span> <span class="o">&lt;</span> <span class="n">best_val_loss</span><span class="p">:</span>
             <span class="n">best_val_loss</span> <span class="o">=</span> <span class="n">val_loss</span>
             <span class="n">torch</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nf">state_dict</span><span class="p">(),</span> <span class="sh">'</span><span class="s">best_entrainment_model.pth</span><span class="sh">'</span><span class="p">)</span>
-        
+
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Epoch </span><span class="si">{</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">epochs</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">)</span>
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Train Loss: </span><span class="si">{</span><span class="n">train_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
         <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Val Loss: </span><span class="si">{</span><span class="n">val_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">val_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
@@ -298,16 +298,16 @@
     Select AI responses that promote natural entrainment patterns.
     </span><span class="sh">"""</span>
     <span class="n">entrainment_scores</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">for</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="n">ai_response_candidates</span><span class="p">:</span>
         <span class="c1"># Extract features from user speech and candidate response
 </span>        <span class="n">user_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">user_speech</span><span class="p">)</span>
         <span class="n">candidate_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
-        
+
         <span class="c1"># Predict entrainment compatibility
 </span>        <span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">predict_entrainment</span><span class="p">(</span><span class="n">user_features</span><span class="p">,</span> <span class="n">candidate_features</span><span class="p">)</span>
         <span class="n">entrainment_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
-    
+
     <span class="c1"># Select response with optimal entrainment score
 </span>    <span class="n">best_response_idx</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">argmax</span><span class="p">(</span><span class="n">entrainment_scores</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">ai_response_candidates</span><span class="p">[</span><span class="n">best_response_idx</span><span class="p">]</span>
@@ -316,14 +316,14 @@
     Track patient progress in developing natural entrainment patterns.
     </span><span class="sh">"""</span>
     <span class="n">progress_scores</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="n">patient_sessions</span><span class="p">:</span>
         <span class="n">therapist_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">therapist</span><span class="sh">'</span><span class="p">]</span>
         <span class="n">patient_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">patient</span><span class="sh">'</span><span class="p">]</span>
-        
+
         <span class="n">entrainment_score</span> <span class="o">=</span> <span class="nf">detect_entrainment</span><span class="p">(</span><span class="n">therapist_speech</span><span class="p">,</span> <span class="n">patient_speech</span><span class="p">)</span>
         <span class="n">progress_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">entrainment_score</span><span class="p">)</span>
-    
+
     <span class="k">return</span> <span class="p">{</span>
         <span class="sh">'</span><span class="s">overall_progress</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">),</span>
         <span class="sh">'</span><span class="s">trend</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">polyfit</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">)),</span> <span class="n">progress_scores</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span>
@@ -355,16 +355,16 @@ Content 2
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
 
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="512ae668-444e-4385-bda6-e116a535ba6b" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="512ae668-444e-4385-bda6-e116a535ba6b" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="30c49e32-486c-44d3-9c82-9a33c41517fb" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="30c49e32-486c-44d3-9c82-9a33c41517fb" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="16990821-8fb1-41d4-94d8-1ce4473b13b1" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="16990821-8fb1-41d4-94d8-1ce4473b13b1" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
+</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="94293e36-bda3-46a2-a0e3-a91fa14f48a6" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="94293e36-bda3-46a2-a0e3-a91fa14f48a6" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
 </code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="416d581f-66a7-42e6-aa42-3efbd49cbc94" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="416d581f-66a7-42e6-aa42-3efbd49cbc94" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://yuan-zheng.net/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://yuan-zheng.net/blog/2024/typograms</id><content type="html" xml:base="https://yuan-zheng.net/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
+</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="8ad131fd-cc92-489c-bb71-dd675abaa2bc" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="8ad131fd-cc92-489c-bb71-dd675abaa2bc" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://yuan-zheng.net/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://yuan-zheng.net/blog/2024/typograms</id><content type="html" xml:base="https://yuan-zheng.net/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
 </span><span class="sb">+----+
 |    |---&gt; My first diagram!
 +----+</span>
