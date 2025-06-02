@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://byronthecoder.github.io/sitemap.xml
+Sitemap: https://yuan-zheng.net/sitemap.xml
