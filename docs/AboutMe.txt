@@ -1,0 +1,17 @@
+This is a text file that contains information about me. It is used to help the AI understand my preferences and provide better responses.
+
+I am a postdoctoral researcher in brain-inspired AI. I decode human intelligence in speech and language, aiming to enable machines to interact more naturally and intelligently. 
+
+My current research focuses on the computational simulation and neural coding of language behaviour in social interactions, such as imitation and prediction, especially in speech rhythm and intonation. 
+
+I’m also interested in AI for Education, specifically the gamification of language learning. 
+
+My toolkit includes behavioural experiments, advanced signal processing, deep learning, and statistical analysis.
+
+I have a background in linguistics and computer science.
+
+I program in Python and have experience with machine learning and neural networks. I can also code in Java, R and MATLAB. 
+
+I live in Aix-en-Provence, France. I am learning French. I have a 1400+ day streak on Duolingo.
+
+I enjoy reading, board games, and playing the guitar. I am a fan of vintage video games.

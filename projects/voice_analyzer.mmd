@@ -1,0 +1,47 @@
+flowchart LR
+    %% Define styles
+    classDef input fill:#a2d2ff,stroke:#333,stroke-width:1px
+    classDef process fill:#caffbf,stroke:#333,stroke-width:1px
+    classDef decision fill:#fdffb6,stroke:#333,stroke-width:1px
+    classDef output fill:#ffc6ff,stroke:#333,stroke-width:1px
+    classDef store fill:#d8d8d8,stroke:#333,stroke-width:1px
+    classDef model fill:#9bf6ff,stroke:#333,stroke-width:1px
+    
+    %% Input Section
+    start([Start]) --> choice{"Choose Input Method"}
+    choice -->|"Upload"| upload[/"Upload Audio Files"/]
+    choice -->|"Record"| record[/"Record Voice"/]
+    
+    upload --> audioFile1["Audio File 1"]:::input
+    upload --> audioFile2["Audio File 2"]:::input
+    record --> audioFile1
+    record --> audioFile2
+    
+    %% Play/Processing Section
+    audioFile1 --> player1["Web Audio Player 1"]:::process
+    audioFile2 --> player2["Web Audio Player 2"]:::process
+    
+    player1 --> satisfied1{"Review OK?"}:::decision
+    player2 --> satisfied2{"Review OK?"}:::decision
+    
+    satisfied1 -->|"No"| choice
+    satisfied2 -->|"No"| choice
+    
+    satisfied1 -->|"Yes"| extract1["Extract MFCC Features<br/>(WebAssembly)"]:::process
+    satisfied2 -->|"Yes"| extract2["Extract MFCC Features<br/>(WebAssembly)"]:::process
+    
+    %% Analysis Section
+    extract1 --> features1["MFCC Features 1"]:::input
+    extract2 --> features2["MFCC Features 2"]:::input
+    
+    model[("Pre-trained<br/>Siamese RNN Model")]:::model
+    
+    features1 --> analyze["Compute Similarity Score"]:::process
+    features2 --> analyze
+    model --> analyze
+    
+    %% Output Section
+    analyze --> similarityScore[/"Similarity Score"/]:::output
+    similarityScore --> visualize["Display Results"]:::output
+    visualize --> endNode([End])
+    

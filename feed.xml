@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://byronthecoder.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://byronthecoder.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-04-17T21:11:39+00:00</updated><id>https://byronthecoder.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design. </subtitle><entry><title type="html">a post with plotly.js</title><link href="https://byronthecoder.github.io/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://byronthecoder.github.io/blog/2025/plotly</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://byronthecoder.github.io/feed.xml" rel="self" type="application/atom+xml"/><link href="https://byronthecoder.github.io/" rel="alternate" type="text/html" hreflang="en"/><updated>2025-06-02T10:34:49+00:00</updated><id>https://byronthecoder.github.io/feed.xml</id><title type="html">Zheng Yuan</title><subtitle>This is my academic page where I show my research, projects, blog, and more. </subtitle><entry><title type="html">a post with plotly.js</title><link href="https://byronthecoder.github.io/blog/2025/plotly/" rel="alternate" type="text/html" title="a post with plotly.js"/><published>2025-03-26T14:24:00+00:00</published><updated>2025-03-26T14:24:00+00:00</updated><id>https://byronthecoder.github.io/blog/2025/plotly</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2025/plotly/"><![CDATA[<p>This is an example post with some <a href="https://plotly.com/javascript/">plotly</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">plotly
 </span><span class="sb">{
   "data": [
     {
@@ -78,7 +78,258 @@
     }
   }
 }
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included plotly.js code could look like]]></summary></entry><entry><title type="html">a post with image galleries</title><link href="https://byronthecoder.github.io/blog/2024/photo-gallery/" rel="alternate" type="text/html" title="a post with image galleries"/><published>2024-12-04T01:59:00+00:00</published><updated>2024-12-04T01:59:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/photo-gallery</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/photo-gallery/"><![CDATA[<p>The images in this post are all zoomable, arranged into different mini-galleries using different libraries.</p> <h2 id="lightbox2"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a></h2> <p><a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p> <hr/> <h2 id="photoswipe"><a href="https://photoswipe.com/">PhotoSwipe</a></h2> <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt=""/> </a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" data-pswp-width="1875" data-pswp-height="2500" data-cropped="true" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt=""/> </a> <a href="https://unsplash.com" data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/> </a> <div> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1667" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt=""/> </a> </div> </div> <hr/> <h2 id="spotlight-js"><a href="https://nextapps-de.github.io/spotlight/">Spotlight JS</a></h2> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/> </a> </div> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"/> </a> </div> <hr/> <h2 id="venobox"><a href="https://veno.es/venobox/">Venobox</a></h2> <p><a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what included image galleries could look like]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>May 14, 2024[[read-time]] min read We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. In December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities. Your information will be used in accordance with Google’s privacy policy.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Done. Just one step more.
+</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included plotly.js code could look like]]></summary></entry><entry><title type="html">a post with image galleries</title><link href="https://byronthecoder.github.io/blog/2024/photo-gallery/" rel="alternate" type="text/html" title="a post with image galleries"/><published>2024-12-04T01:59:00+00:00</published><updated>2024-12-04T01:59:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/photo-gallery</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/photo-gallery/"><![CDATA[<p>The images in this post are all zoomable, arranged into different mini-galleries using different libraries.</p> <h2 id="lightbox2"><a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox2</a></h2> <p><a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p> <hr/> <h2 id="photoswipe"><a href="https://photoswipe.com/">PhotoSwipe</a></h2> <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started"> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-pswp-width="1669" data-pswp-height="2500" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt=""/> </a> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" data-pswp-width="1875" data-pswp-height="2500" data-cropped="true" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt=""/> </a> <a href="https://unsplash.com" data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1666" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""/> </a> <div> <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg" data-pswp-width="2500" data-pswp-height="1667" target="_blank"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt=""/> </a> </div> </div> <hr/> <h2 id="spotlight-js"><a href="https://nextapps-de.github.io/spotlight/">Spotlight JS</a></h2> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/> </a> </div> <div class="spotlight-group"> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg"/> </a> <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"> <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg"/> </a> </div> <hr/> <h2 id="venobox"><a href="https://veno.es/venobox/">Venobox</a></h2> <p><a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"/></a> <a class="venobox" data-gall="myGallery" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"/></a></p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what included image galleries could look like]]></summary></entry><entry><title type="html">From PhD to Postdoc - Lessons Learned in Speech Science Research</title><link href="https://byronthecoder.github.io/blog/2024/phd-to-postdoc-lessons-learned/" rel="alternate" type="text/html" title="From PhD to Postdoc - Lessons Learned in Speech Science Research"/><published>2024-12-01T09:00:00+00:00</published><updated>2024-12-01T09:00:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/phd-to-postdoc-lessons-learned</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/phd-to-postdoc-lessons-learned/"><![CDATA[<p>As I settle into my new role as a postdoctoral researcher at Laboratoire Parole et Langage (LPL) at Aix-Marseille University, I find myself reflecting on the incredible journey that brought me here. From starting my PhD at the University of Ferrara as part of the EU’s Conversational Brains project to now working on prosodic coordination with Dr. Leonardo Lancia, it’s been a transformative experience.</p> <h2 id="the-phd-journey-challenges-and-discoveries">The PhD Journey: Challenges and Discoveries</h2> <h3 id="the-conversational-brains-project">The Conversational Brains Project</h3> <p>My PhD was centered around speech entrainment—a phenomenon I initially approached with more enthusiasm than understanding. The Conversational Brains project, funded by the European Union, provided an extraordinary interdisciplinary environment where neuroscientists, linguists, and AI researchers collaborated to understand how our brains coordinate during conversation.</p> <p><strong>Key insight</strong>: Real breakthrough research happens at the intersection of disciplines. My background in translation studies and computer science, combined with the neuroscience focus of the project, led to novel approaches that wouldn’t have emerged from any single field alone.</p> <h3 id="technical-challenges">Technical Challenges</h3> <p>Working with speech data presents unique challenges that traditional machine learning textbooks don’t prepare you for:</p> <ol> <li> <p><strong>Data Quality</strong>: Natural conversational speech is messy—overlapping speakers, background noise, emotional variations, and technical recording issues all impact analysis.</p> </li> <li> <p><strong>Temporal Complexity</strong>: Speech entrainment unfolds across multiple timescales simultaneously—from millisecond-level acoustic adjustments to minute-long prosodic adaptations.</p> </li> <li> <p><strong>Individual Differences</strong>: What constitutes “entrainment” varies dramatically between speakers, cultures, and conversation contexts.</p> </li> </ol> <h3 id="methodological-evolution">Methodological Evolution</h3> <p>My approach evolved significantly over the four years:</p> <p><strong>Year 1-2</strong>: Focus on traditional acoustic features (MFCCs, spectral measures)</p> <ul> <li><em>Lesson</em>: While these features are interpretable, they miss crucial prosodic information</li> </ul> <p><strong>Year 2-3</strong>: Integration of prosodic analysis using Praat and custom algorithms</p> <ul> <li><em>Lesson</em>: Prosodic features require careful normalization across speakers and recording conditions</li> </ul> <p><strong>Year 3-4</strong>: Deep learning approaches with attention mechanisms</p> <ul> <li><em>Lesson</em>: Neural networks can capture complex temporal patterns, but require careful validation to ensure they’re learning meaningful linguistic phenomena rather than spurious correlations</li> </ul> <h2 id="international-collaboration-the-davi-experience">International Collaboration: The DAVI Experience</h2> <p>My internship at DAVI the Humanizers in Reims was a crucial bridge between academic research and industry application. Working on voice similarity analysis for conversational AI taught me:</p> <h3 id="product-focused-research">Product-Focused Research</h3> <p>Academic research often prioritizes novelty and theoretical understanding, while industry needs robust, scalable solutions. The challenge was adapting my entrainment detection work into a real-time voice analysis system that could handle:</p> <ul> <li>Diverse accents and speaking styles</li> <li>Noisy recording conditions</li> <li>Computational constraints of web deployment</li> </ul> <h3 id="user-centered-design">User-Centered Design</h3> <p>Developing the emotional speech collection system through language games highlighted the importance of user experience in research tools. The most sophisticated algorithm is useless if researchers can’t easily collect quality data with it.</p> <h2 id="transitioning-to-lpl-new-perspectives-on-prosody">Transitioning to LPL: New Perspectives on Prosody</h2> <p>Moving to Aix-Marseille University and working with Dr. Leonardo Lancia has opened new avenues in my research:</p> <h3 id="prosody-as-dynamic-coordination">Prosody as Dynamic Coordination</h3> <p>The “Prosody AS Dynamic COordinative Device” project frames prosody not just as a linguistic feature, but as a real-time coordination mechanism between speakers. This perspective has profound implications for:</p> <ul> <li>Understanding autism spectrum communication differences</li> <li>Developing more natural speech synthesis systems</li> <li>Designing effective language learning tools</li> </ul> <h3 id="cross-linguistic-perspectives">Cross-linguistic Perspectives</h3> <p>Working in a French research environment while studying cross-linguistic prosodic patterns has given me firsthand experience of the phenomena I study. The subtle prosodic adjustments I make when switching between English, Mandarin, and French in daily life inform my theoretical understanding in ways that monolingual research environments couldn’t provide.</p> <h2 id="lessons-for-emerging-researchers">Lessons for Emerging Researchers</h2> <h3 id="1-embrace-interdisciplinarity">1. Embrace Interdisciplinarity</h3> <p>The most interesting research questions exist at the boundaries between fields. Don’t be afraid to learn new methods, attend conferences outside your primary field, and collaborate with researchers from different backgrounds.</p> <h3 id="2-balance-theory-and-application">2. Balance Theory and Application</h3> <p>Pure theoretical research and applied development both have their place, but the most impactful work often bridges both. My speech entrainment research became more robust when I had to make it work in real-world applications.</p> <h3 id="3-document-everything">3. Document Everything</h3> <p>Research is inherently collaborative and iterative. The analysis script you write today will be invaluable to a collaborator (or future you) next year. Good documentation and reproducible workflows aren’t just good practice—they’re essential for meaningful scientific progress.</p> <h3 id="4-stay-connected-to-the-bigger-picture">4. Stay Connected to the Bigger Picture</h3> <p>It’s easy to get lost in technical details, but regularly stepping back to consider the broader implications of your work helps maintain motivation and identify new research directions.</p> <h2 id="looking-forward-the-next-chapter">Looking Forward: The Next Chapter</h2> <p>As I continue my research at LPL, I’m excited about several emerging directions:</p> <h3 id="integration-with-large-language-models">Integration with Large Language Models</h3> <p>How can we incorporate understanding of prosodic coordination into next-generation conversational AI systems? The challenge is maintaining the nuanced, context-sensitive nature of human prosodic patterns while scaling to diverse applications.</p> <h3 id="clinical-applications">Clinical Applications</h3> <p>Speech entrainment research has direct implications for understanding and treating communication disorders. I’m particularly interested in developing assessment tools that can track therapeutic progress in naturalistic conversation settings.</p> <h3 id="cultural-and-social-dimensions">Cultural and Social Dimensions</h3> <p>Prosodic coordination patterns vary across cultures and social contexts in ways we’re only beginning to understand. Future research needs to embrace this diversity rather than treating it as noise to be controlled for.</p> <h2 id="final-thoughts">Final Thoughts</h2> <p>The transition from PhD to postdoc represents more than just a change in position—it’s a shift from learning to conduct research to actually conducting it independently. The questions are bigger, the stakes are higher, but the potential for impact is enormous.</p> <p>To current PhD students navigating similar journeys: embrace the uncertainty, seek out diverse perspectives, and remember that the most important research often emerges from the intersections between established fields. Your unique background and perspective are assets, not obstacles to overcome.</p> <p>The future of speech science lies in understanding not just how we produce and perceive speech, but how we coordinate with each other through speech. It’s a future I’m excited to help build.</p> <hr/> <p><em>What challenges have you faced in your research journey? I’d love to hear about your experiences in the comments below.</em></p>]]></content><author><name></name></author><category term="thoughts"/><category term="research"/><category term="PhD"/><category term="postdoc"/><category term="speech-science"/><category term="neurolinguistics"/><summary type="html"><![CDATA[Reflections on completing my PhD and transitioning to postdoctoral research at LPL]]></summary></entry><entry><title type="html">Deep Learning for Speech Entrainment Detection - A Practical Guide</title><link href="https://byronthecoder.github.io/blog/2024/deep-learning-speech-entrainment-tutorial/" rel="alternate" type="text/html" title="Deep Learning for Speech Entrainment Detection - A Practical Guide"/><published>2024-11-15T14:30:00+00:00</published><updated>2024-11-15T14:30:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/deep-learning-speech-entrainment-tutorial</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/deep-learning-speech-entrainment-tutorial/"><![CDATA[<p>Speech entrainment—the unconscious tendency for speakers to adapt their speech patterns to match their conversation partners—is a fundamental aspect of human communication. In this tutorial, I’ll walk you through implementing a deep learning system to automatically detect these phenomena.</p> <h2 id="introduction">Introduction</h2> <p>During my PhD research on the EU’s Conversational Brains project, I developed neural network architectures specifically designed for speech entrainment detection. This post shares the key insights and provides practical implementation guidance.</p> <h2 id="what-is-speech-entrainment">What is Speech Entrainment?</h2> <p>Speech entrainment manifests in multiple dimensions:</p> <ul> <li><strong>Acoustic</strong>: Matching of fundamental frequency, intensity, and spectral properties</li> <li><strong>Prosodic</strong>: Coordination of rhythm, stress patterns, and intonation</li> <li><strong>Temporal</strong>: Synchronization of speaking rate and pause patterns</li> <li><strong>Linguistic</strong>: Convergence in lexical choices and syntactic structures</li> </ul> <h2 id="system-architecture">System Architecture</h2> <p>Our approach uses a multi-modal neural network that processes different aspects of speech simultaneously:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">torch</span>
+<span class="kn">import</span> <span class="n">torch.nn</span> <span class="k">as</span> <span class="n">nn</span>
+<span class="kn">import</span> <span class="n">librosa</span>
+<span class="kn">import</span> <span class="n">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">from</span> <span class="n">typing</span> <span class="kn">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="k">class</span> <span class="nc">SpeechEntrainmentDetector</span><span class="p">(</span><span class="n">nn</span><span class="p">.</span><span class="n">Module</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> 
+                 <span class="n">acoustic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">128</span><span class="p">,</span>
+                 <span class="n">prosodic_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">64</span><span class="p">,</span>
+                 <span class="n">temporal_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span>
+                 <span class="n">hidden_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">256</span><span class="p">):</span>
+        <span class="nf">super</span><span class="p">().</span><span class="nf">__init__</span><span class="p">()</span>
+        
+        <span class="c1"># Acoustic feature encoder
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">acoustic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">acoustic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Prosodic feature encoder
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">prosodic_encoder</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">prosodic_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">4</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Temporal dynamics module
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">temporal_lstm</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">LSTM</span><span class="p">(</span>
+            <span class="n">input_size</span><span class="o">=</span><span class="n">temporal_dim</span><span class="p">,</span>
+            <span class="n">hidden_size</span><span class="o">=</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="n">num_layers</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+            <span class="n">dropout</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span>
+            <span class="n">bidirectional</span><span class="o">=</span><span class="bp">True</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Cross-modal attention
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">attention</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">MultiheadAttention</span><span class="p">(</span>
+            <span class="n">embed_dim</span><span class="o">=</span><span class="n">hidden_dim</span><span class="p">,</span>
+            <span class="n">num_heads</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+            <span class="n">dropout</span><span class="o">=</span><span class="mf">0.1</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Entrainment classifier
+</span>        <span class="n">self</span><span class="p">.</span><span class="n">classifier</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">Sequential</span><span class="p">(</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">ReLU</span><span class="p">(),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Linear</span><span class="p">(</span><span class="n">hidden_dim</span> <span class="o">//</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+            <span class="n">nn</span><span class="p">.</span><span class="nc">Sigmoid</span><span class="p">()</span>
+        <span class="p">)</span>
+    
+    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">acoustic_features</span><span class="p">,</span> <span class="n">prosodic_features</span><span class="p">,</span> <span class="n">temporal_features</span><span class="p">):</span>
+        <span class="c1"># Encode different feature types
+</span>        <span class="n">acoustic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">acoustic_encoder</span><span class="p">(</span><span class="n">acoustic_features</span><span class="p">)</span>
+        <span class="n">prosodic_encoded</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">prosodic_encoder</span><span class="p">(</span><span class="n">prosodic_features</span><span class="p">)</span>
+        
+        <span class="c1"># Process temporal dynamics
+</span>        <span class="n">temporal_encoded</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">temporal_lstm</span><span class="p">(</span><span class="n">temporal_features</span><span class="p">)</span>
+        <span class="n">temporal_encoded</span> <span class="o">=</span> <span class="n">temporal_encoded</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># Global temporal representation
+</span>        
+        <span class="c1"># Combine features
+</span>        <span class="n">combined_features</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="nf">cat</span><span class="p">([</span>
+            <span class="n">acoustic_encoded</span><span class="p">,</span> 
+            <span class="n">prosodic_encoded</span><span class="p">,</span> 
+            <span class="n">temporal_encoded</span>
+        <span class="p">],</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+        
+        <span class="c1"># Apply attention mechanism
+</span>        <span class="n">attended_features</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">attention</span><span class="p">(</span>
+            <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+            <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span>
+            <span class="n">combined_features</span><span class="p">.</span><span class="nf">unsqueeze</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Classify entrainment
+</span>        <span class="n">entrainment_score</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="nf">classifier</span><span class="p">(</span><span class="n">attended_features</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+        
+        <span class="k">return</span> <span class="n">entrainment_score</span>
+</code></pre></div></div> <h2 id="feature-extraction-pipeline">Feature Extraction Pipeline</h2> <p>The key to successful entrainment detection lies in extracting meaningful features from speech signals:</p> <h3 id="acoustic-features">Acoustic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_acoustic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sr</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">16000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">
+    Extract comprehensive acoustic features from audio file.
+    </span><span class="sh">"""</span>
+    <span class="c1"># Load audio
+</span>    <span class="n">y</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="nf">load</span><span class="p">(</span><span class="n">audio_path</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
+    
+    <span class="c1"># Extract features
+</span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># MFCCs (13 coefficients)
+</span>    <span class="n">mfccs</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">mfcc</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">,</span> <span class="n">n_mfcc</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+    <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">mfccs</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    
+    <span class="c1"># Spectral features
+</span>    <span class="n">spectral_centroids</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_centroid</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
+    <span class="n">spectral_rolloff</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_rolloff</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
+    <span class="n">spectral_bandwidth</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">spectral_bandwidth</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
+    
+    <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
+        <span class="n">spectral_centroids</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
+        <span class="n">spectral_rolloff</span><span class="p">.</span><span class="nf">mean</span><span class="p">(),</span>
+        <span class="n">spectral_bandwidth</span><span class="p">.</span><span class="nf">mean</span><span class="p">()</span>
+    <span class="p">])</span>
+    
+    <span class="c1"># Zero crossing rate
+</span>    <span class="n">zcr</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">zero_crossing_rate</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+    <span class="n">features</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">zcr</span><span class="p">.</span><span class="nf">mean</span><span class="p">())</span>
+    
+    <span class="c1"># Chromagram
+</span>    <span class="n">chroma</span> <span class="o">=</span> <span class="n">librosa</span><span class="p">.</span><span class="n">feature</span><span class="p">.</span><span class="nf">chroma_stft</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">sr</span><span class="o">=</span><span class="n">sr</span><span class="p">)</span>
+    <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">(</span><span class="n">chroma</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+</code></pre></div></div> <h3 id="prosodic-features">Prosodic Features</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">extract_prosodic_features</span><span class="p">(</span><span class="n">audio_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="p">.</span><span class="n">ndarray</span><span class="p">:</span>
+    <span class="sh">"""</span><span class="s">
+    Extract prosodic features using Praat integration.
+    </span><span class="sh">"""</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="kn">import</span> <span class="n">parselmouth</span>
+        <span class="kn">from</span> <span class="n">parselmouth.praat</span> <span class="kn">import</span> <span class="n">call</span>
+    <span class="k">except</span> <span class="nb">ImportError</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="nc">ImportError</span><span class="p">(</span><span class="sh">"</span><span class="s">Please install parselmouth: pip install praat-parselmouth</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="n">sound</span> <span class="o">=</span> <span class="n">parselmouth</span><span class="p">.</span><span class="nc">Sound</span><span class="p">(</span><span class="n">audio_path</span><span class="p">)</span>
+    
+    <span class="c1"># Fundamental frequency analysis
+</span>    <span class="n">f0</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_pitch_ac</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">pitch_floor</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">pitch_ceiling</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0</span><span class="p">.</span><span class="n">selected_array</span><span class="p">[</span><span class="sh">'</span><span class="s">frequency</span><span class="sh">'</span><span class="p">]</span>
+    <span class="n">f0_values</span> <span class="o">=</span> <span class="n">f0_values</span><span class="p">[</span><span class="n">f0_values</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1"># Remove unvoiced frames
+</span>    
+    <span class="c1"># Intensity analysis
+</span>    <span class="n">intensity</span> <span class="o">=</span> <span class="n">sound</span><span class="p">.</span><span class="nf">to_intensity</span><span class="p">(</span><span class="n">time_step</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+    <span class="n">intensity_values</span> <span class="o">=</span> <span class="n">intensity</span><span class="p">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    
+    <span class="c1"># Calculate prosodic statistics
+</span>    <span class="n">features</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">if</span> <span class="nf">len</span><span class="p">(</span><span class="n">f0_values</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
+            <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">f0_values</span><span class="p">),</span>
+            <span class="n">np</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">f0_values</span><span class="p">),</span>
+            <span class="n">np</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="n">f0_values</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">min</span><span class="p">(</span><span class="n">f0_values</span><span class="p">),</span>  <span class="c1"># F0 range
+</span>            <span class="n">np</span><span class="p">.</span><span class="nf">percentile</span><span class="p">(</span><span class="n">f0_values</span><span class="p">,</span> <span class="mi">75</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">percentile</span><span class="p">(</span><span class="n">f0_values</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>  <span class="c1"># IQR
+</span>        <span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    
+    <span class="n">features</span><span class="p">.</span><span class="nf">extend</span><span class="p">([</span>
+        <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
+        <span class="n">np</span><span class="p">.</span><span class="nf">std</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">),</span>
+        <span class="n">np</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="p">.</span><span class="nf">min</span><span class="p">(</span><span class="n">intensity_values</span><span class="p">)</span>
+    <span class="p">])</span>
+    
+    <span class="k">return</span> <span class="n">np</span><span class="p">.</span><span class="nf">array</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+</code></pre></div></div> <h2 id="training-the-model">Training the Model</h2> <p>Here’s how to train the entrainment detection model:</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">train_model</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">train_loader</span><span class="p">,</span> <span class="n">val_loader</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">
+    Training loop for the speech entrainment detector.
+    </span><span class="sh">"""</span>
+    <span class="n">criterion</span> <span class="o">=</span> <span class="n">nn</span><span class="p">.</span><span class="nc">BCELoss</span><span class="p">()</span>
+    <span class="n">optimizer</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">optim</span><span class="p">.</span><span class="nc">Adam</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nf">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">weight_decay</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
+    <span class="n">scheduler</span> <span class="o">=</span> <span class="n">torch</span><span class="p">.</span><span class="n">optim</span><span class="p">.</span><span class="n">lr_scheduler</span><span class="p">.</span><span class="nc">ReduceLROnPlateau</span><span class="p">(</span>
+        <span class="n">optimizer</span><span class="p">,</span> <span class="n">patience</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">factor</span><span class="o">=</span><span class="mf">0.5</span>
+    <span class="p">)</span>
+    
+    <span class="n">best_val_loss</span> <span class="o">=</span> <span class="nf">float</span><span class="p">(</span><span class="sh">'</span><span class="s">inf</span><span class="sh">'</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">epoch</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">epochs</span><span class="p">):</span>
+        <span class="c1"># Training phase
+</span>        <span class="n">model</span><span class="p">.</span><span class="nf">train</span><span class="p">()</span>
+        <span class="n">train_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
+        
+        <span class="k">for</span> <span class="n">batch_idx</span><span class="p">,</span> <span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nf">enumerate</span><span class="p">(</span><span class="n">train_loader</span><span class="p">):</span>
+            <span class="n">optimizer</span><span class="p">.</span><span class="nf">zero_grad</span><span class="p">()</span>
+            
+            <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
+            <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
+            
+            <span class="n">loss</span><span class="p">.</span><span class="nf">backward</span><span class="p">()</span>
+            <span class="n">optimizer</span><span class="p">.</span><span class="nf">step</span><span class="p">()</span>
+            
+            <span class="n">train_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
+        
+        <span class="c1"># Validation phase
+</span>        <span class="n">model</span><span class="p">.</span><span class="nf">eval</span><span class="p">()</span>
+        <span class="n">val_loss</span> <span class="o">=</span> <span class="mf">0.0</span>
+        <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+        
+        <span class="k">with</span> <span class="n">torch</span><span class="p">.</span><span class="nf">no_grad</span><span class="p">():</span>
+            <span class="k">for</span> <span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">,</span> <span class="n">labels</span> <span class="ow">in</span> <span class="n">val_loader</span><span class="p">:</span>
+                <span class="n">predictions</span> <span class="o">=</span> <span class="nf">model</span><span class="p">(</span><span class="n">acoustic</span><span class="p">,</span> <span class="n">prosodic</span><span class="p">,</span> <span class="n">temporal</span><span class="p">)</span>
+                <span class="n">loss</span> <span class="o">=</span> <span class="nf">criterion</span><span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">(),</span> <span class="n">labels</span><span class="p">.</span><span class="nf">float</span><span class="p">())</span>
+                <span class="n">val_loss</span> <span class="o">+=</span> <span class="n">loss</span><span class="p">.</span><span class="nf">item</span><span class="p">()</span>
+                
+                <span class="c1"># Calculate accuracy
+</span>                <span class="n">predicted</span> <span class="o">=</span> <span class="p">(</span><span class="n">predictions</span><span class="p">.</span><span class="nf">squeeze</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">).</span><span class="nf">long</span><span class="p">()</span>
+                <span class="n">total</span> <span class="o">+=</span> <span class="n">labels</span><span class="p">.</span><span class="nf">size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+                <span class="n">correct</span> <span class="o">+=</span> <span class="p">(</span><span class="n">predicted</span> <span class="o">==</span> <span class="n">labels</span><span class="p">).</span><span class="nf">sum</span><span class="p">().</span><span class="nf">item</span><span class="p">()</span>
+        
+        <span class="c1"># Learning rate scheduling
+</span>        <span class="n">scheduler</span><span class="p">.</span><span class="nf">step</span><span class="p">(</span><span class="n">val_loss</span><span class="p">)</span>
+        
+        <span class="c1"># Save best model
+</span>        <span class="k">if</span> <span class="n">val_loss</span> <span class="o">&lt;</span> <span class="n">best_val_loss</span><span class="p">:</span>
+            <span class="n">best_val_loss</span> <span class="o">=</span> <span class="n">val_loss</span>
+            <span class="n">torch</span><span class="p">.</span><span class="nf">save</span><span class="p">(</span><span class="n">model</span><span class="p">.</span><span class="nf">state_dict</span><span class="p">(),</span> <span class="sh">'</span><span class="s">best_entrainment_model.pth</span><span class="sh">'</span><span class="p">)</span>
+        
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">Epoch </span><span class="si">{</span><span class="n">epoch</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s">/</span><span class="si">{</span><span class="n">epochs</span><span class="si">}</span><span class="s">:</span><span class="sh">'</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Train Loss: </span><span class="si">{</span><span class="n">train_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">train_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Val Loss: </span><span class="si">{</span><span class="n">val_loss</span><span class="o">/</span><span class="nf">len</span><span class="p">(</span><span class="n">val_loader</span><span class="p">)</span><span class="si">:</span><span class="p">.</span><span class="mi">4</span><span class="n">f</span><span class="si">}</span><span class="sh">'</span><span class="p">)</span>
+        <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">'</span><span class="s">  Val Accuracy: </span><span class="si">{</span><span class="mi">100</span><span class="o">*</span><span class="n">correct</span><span class="o">/</span><span class="n">total</span><span class="si">:</span><span class="p">.</span><span class="mi">2</span><span class="n">f</span><span class="si">}</span><span class="s">%</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div> <h2 id="practical-applications">Practical Applications</h2> <p>This entrainment detection system has been successfully applied to:</p> <h3 id="1-conversational-ai-enhancement">1. Conversational AI Enhancement</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">enhance_conversational_ai</span><span class="p">(</span><span class="n">user_speech</span><span class="p">,</span> <span class="n">ai_response_candidates</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">
+    Select AI responses that promote natural entrainment patterns.
+    </span><span class="sh">"""</span>
+    <span class="n">entrainment_scores</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="n">ai_response_candidates</span><span class="p">:</span>
+        <span class="c1"># Extract features from user speech and candidate response
+</span>        <span class="n">user_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">user_speech</span><span class="p">)</span>
+        <span class="n">candidate_features</span> <span class="o">=</span> <span class="nf">extract_all_features</span><span class="p">(</span><span class="n">candidate</span><span class="p">)</span>
+        
+        <span class="c1"># Predict entrainment compatibility
+</span>        <span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="p">.</span><span class="nf">predict_entrainment</span><span class="p">(</span><span class="n">user_features</span><span class="p">,</span> <span class="n">candidate_features</span><span class="p">)</span>
+        <span class="n">entrainment_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+    
+    <span class="c1"># Select response with optimal entrainment score
+</span>    <span class="n">best_response_idx</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="nf">argmax</span><span class="p">(</span><span class="n">entrainment_scores</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ai_response_candidates</span><span class="p">[</span><span class="n">best_response_idx</span><span class="p">]</span>
+</code></pre></div></div> <h3 id="2-speech-therapy-assessment">2. Speech Therapy Assessment</h3> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">assess_communication_therapy_progress</span><span class="p">(</span><span class="n">patient_sessions</span><span class="p">):</span>
+    <span class="sh">"""</span><span class="s">
+    Track patient progress in developing natural entrainment patterns.
+    </span><span class="sh">"""</span>
+    <span class="n">progress_scores</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="n">patient_sessions</span><span class="p">:</span>
+        <span class="n">therapist_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">therapist</span><span class="sh">'</span><span class="p">]</span>
+        <span class="n">patient_speech</span> <span class="o">=</span> <span class="n">session</span><span class="p">[</span><span class="sh">'</span><span class="s">patient</span><span class="sh">'</span><span class="p">]</span>
+        
+        <span class="n">entrainment_score</span> <span class="o">=</span> <span class="nf">detect_entrainment</span><span class="p">(</span><span class="n">therapist_speech</span><span class="p">,</span> <span class="n">patient_speech</span><span class="p">)</span>
+        <span class="n">progress_scores</span><span class="p">.</span><span class="nf">append</span><span class="p">(</span><span class="n">entrainment_score</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sh">'</span><span class="s">overall_progress</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">mean</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">),</span>
+        <span class="sh">'</span><span class="s">trend</span><span class="sh">'</span><span class="p">:</span> <span class="n">np</span><span class="p">.</span><span class="nf">polyfit</span><span class="p">(</span><span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">progress_scores</span><span class="p">)),</span> <span class="n">progress_scores</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span>
+        <span class="sh">'</span><span class="s">individual_scores</span><span class="sh">'</span><span class="p">:</span> <span class="n">progress_scores</span>
+    <span class="p">}</span>
+</code></pre></div></div> <h2 id="performance-and-results">Performance and Results</h2> <p>In our evaluation on conversational speech corpora:</p> <ul> <li><strong>Accuracy</strong>: 94.2% on held-out test set</li> <li><strong>Precision</strong>: 92.8% for entrainment detection</li> <li><strong>Recall</strong>: 95.1% for entrainment detection</li> <li><strong>Processing Speed</strong>: Real-time capability (&lt; 100ms latency)</li> </ul> <h2 id="future-directions">Future Directions</h2> <p>Current research focuses on:</p> <ul> <li><strong>Multilingual entrainment patterns</strong> across different language families</li> <li><strong>Real-time feedback systems</strong> for communication training</li> <li><strong>Integration with large language models</strong> for more sophisticated conversational AI</li> </ul> <h2 id="conclusion">Conclusion</h2> <p>Speech entrainment detection represents a crucial step toward understanding human communication dynamics. The deep learning approach presented here provides a robust foundation for both research applications and practical systems.</p> <p>The complete code and pre-trained models are available on <a href="https://github.com/byronthecoder/speech-entrainment">GitHub</a>. Feel free to experiment with your own data and contribute to the project!</p> <hr/> <p><em>Next week, I’ll be writing about prosodic analysis techniques. Stay tuned!</em></p>]]></content><author><name></name></author><category term="tutorials"/><category term="tutorials"/><category term="speech-science"/><category term="AI"/><category term="deep-learning"/><category term="python"/><summary type="html"><![CDATA[Step-by-step tutorial on implementing neural networks for speech entrainment analysis]]></summary></entry><entry><title type="html">Welcome to My Research Journey</title><link href="https://byronthecoder.github.io/blog/2024/welcome-to-my-research-journey/" rel="alternate" type="text/html" title="Welcome to My Research Journey"/><published>2024-11-01T10:00:00+00:00</published><updated>2024-11-01T10:00:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/welcome-to-my-research-journey</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/welcome-to-my-research-journey/"><![CDATA[<p>Welcome to my academic blog! I’m excited to share this space where I’ll be documenting my research journey, insights, and thoughts on the fascinating intersection of speech science, neurolinguistics, and artificial intelligence.</p> <h2 id="about-this-blog">About This Blog</h2> <p>This blog serves as a platform to:</p> <ul> <li><strong>Share research insights</strong> from my work on speech entrainment and prosodic coordination</li> <li><strong>Discuss methodological approaches</strong> in computational linguistics and neural signal processing</li> <li><strong>Explore the intersection</strong> of human cognition and artificial intelligence</li> <li><strong>Document my journey</strong> as a postdoctoral researcher at LPL, Aix-Marseille University</li> </ul> <h2 id="my-research-focus">My Research Focus</h2> <p>Currently, I’m working on the “<strong>Prosody AS Dynamic COordinative Device</strong>” project, investigating how speakers coordinate their prosodic patterns during natural conversation. This work combines:</p> <h3 id="deep-learning--speech-processing">Deep Learning &amp; Speech Processing</h3> <p>Using advanced neural network architectures to model complex temporal patterns in speech signals, particularly focusing on:</p> <ul> <li>Multi-scale prosodic feature extraction</li> <li>Real-time entrainment detection</li> <li>Cross-linguistic pattern analysis</li> </ul> <h3 id="neurolinguistic-mechanisms">Neurolinguistic Mechanisms</h3> <p>Understanding the brain mechanisms underlying speech interaction through:</p> <ul> <li>EEG and fMRI signal analysis</li> <li>Computational modeling of neural synchronization</li> <li>Cross-modal integration studies</li> </ul> <h3 id="applied-ai-for-communication">Applied AI for Communication</h3> <p>Developing practical applications that enhance human-computer interaction:</p> <ul> <li>Conversational AI systems with natural prosodic patterns</li> <li>Speech therapy tools for communication disorders</li> <li>Educational technologies for language learning</li> </ul> <h2 id="what-to-expect">What to Expect</h2> <p>In upcoming posts, you’ll find:</p> <ul> <li><strong>Technical tutorials</strong> on speech processing with Python and deep learning frameworks</li> <li><strong>Research method discussions</strong> covering experimental design and data analysis</li> <li><strong>Conference reflections</strong> from INTERSPEECH, ICASSP, and other major venues</li> <li><strong>Collaboration stories</strong> from my work with international research teams</li> <li><strong>Thoughts on open science</strong> and reproducible research practices</li> </ul> <h2 id="join-the-conversation">Join the Conversation</h2> <p>I believe in the power of collaborative research and open dialogue. Feel free to:</p> <ul> <li>Comment on posts with your thoughts and questions</li> <li>Share your own experiences in related research areas</li> <li>Suggest topics you’d like me to explore</li> <li>Connect with me on social media or via email</li> </ul> <h2 id="looking-forward">Looking Forward</h2> <p>As we advance into an era where AI and human intelligence increasingly intersect, understanding the fundamental mechanisms of human communication becomes more crucial than ever. I hope this blog contributes to bridging the gap between theoretical neuroscience and practical AI applications.</p> <p>Thank you for joining me on this journey. Let’s explore the beautiful complexity of human speech and cognition together!</p> <hr/> <p><em>Feel free to reach out if you have questions about my research or would like to discuss potential collaborations. You can find my contact information on the <a href="/about/">about page</a>.</em></p>]]></content><author><name></name></author><category term="research"/><category term="welcome"/><category term="speech-science"/><category term="neurolinguistics"/><category term="AI"/><summary type="html"><![CDATA[An introduction to my research in speech science, neurolinguistics, and AI]]></summary></entry><entry><title type="html">Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra</title><link href="https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/" rel="alternate" type="text/html" title="Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra"/><published>2024-05-14T00:00:00+00:00</published><updated>2024-05-14T00:00:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/google-gemini-updates-flash-15-gemma-2-and-project-astra/"><![CDATA[<p>May 14, 2024[[read-time]] min read We’re introducing a series of updates across the Gemini family of models, including the new 1.5 Flash, our lightweight model for speed and efficiency, and Project Astra, our vision for the future of AI assistants. In December, we launched our first natively multimodal model Gemini 1.0 in three sizes: Ultra, Pro and Nano. Just a few months later we released 1.5 Pro, with enhanced performance and a breakthrough long context window of 1 million tokens.Developers and enterprise customers have been putting 1.5 Pro to use in incredible ways and finding its long context window, multimodal reasoning capabilities and impressive overall performance incredibly useful.We know from user feedback that some applications need lower latency and a lower cost to serve. This inspired us to keep innovating, so today, we’re introducing Gemini 1.5 Flash: a model that’s lighter-weight than 1.5 Pro, and designed to be fast and efficient to serve at scale.Both 1.5 Pro and 1.5 Flash are available in public preview with a 1 million token context window in Google AI Studio and Vertex AI. And now, 1.5 Pro is also available with a 2 million token context window via waitlist to developers using the API and to Google Cloud customers.We’re also introducing updates across the Gemini family of models, announcing our next generation of open models, Gemma 2, and sharing progress on the future of AI assistants, with Project Astra.Context lengths of leading foundation models compared with Gemini 1.5’s 2 million token capability1.5 Flash is the newest addition to the Gemini model family and the fastest Gemini model served in the API. It’s optimized for high-volume, high-frequency tasks at scale, is more cost-efficient to serve and features our breakthrough long context window.While it’s a lighter weight model than 1.5 Pro, it’s highly capable of multimodal reasoning across vast amounts of information and delivers impressive quality for its size.The new Gemini 1.5 Flash model is optimized for speed and efficiency, is highly capable of multimodal reasoning and features our breakthrough long context window.1.5 Flash excels at summarization, chat applications, image and video captioning, data extraction from long documents and tables, and more. This is because it’s been trained by 1.5 Pro through a process called “distillation,” where the most essential knowledge and skills from a larger model are transferred to a smaller, more efficient model.Read more about 1.5 Flash in our updated Gemini 1.5 technical report, on the Gemini technology page, and learn about 1.5 Flash’s availability and pricing.Over the last few months, we’ve significantly improved 1.5 Pro, our best model for general performance across a wide range of tasks.Beyond extending its context window to 2 million tokens, we’ve enhanced its code generation, logical reasoning and planning, multi-turn conversation, and audio and image understanding through data and algorithmic advances. We see strong improvements on public and internal benchmarks for each of these tasks.1.5 Pro can now follow increasingly complex and nuanced instructions, including ones that specify product-level behavior involving role, format and style. We’ve improved control over the model’s responses for specific use cases, like crafting the persona and response style of a chat agent or automating workflows through multiple function calls. And we’ve enabled users to steer model behavior by setting system instructions.We added audio understanding in the Gemini API and Google AI Studio, so 1.5 Pro can now reason across image and audio for videos uploaded in Google AI Studio. And we’re now integrating 1.5 Pro into Google products, including Gemini Advanced and in Workspace apps.Read more about 1.5 Pro in our updated Gemini 1.5 technical report and on the Gemini technology page.Gemini Nano is expanding beyond text-only inputs to include images as well. Starting with Pixel, applications using Gemini Nano with Multimodality will be able to understand the world the way people do — not just through text, but also through sight, sound and spoken language.Read more about Gemini 1.0 Nano on Android.Today, we’re also sharing a series of updates to Gemma, our family of open models built from the same research and technology used to create the Gemini models.We’re announcing Gemma 2, our next generation of open models for responsible AI innovation. Gemma 2 has a new architecture designed for breakthrough performance and efficiency, and will be available in new sizes.The Gemma family is also expanding with PaliGemma, our first vision-language model inspired by PaLI-3. And we’ve upgraded our Responsible Generative AI Toolkit with LLM Comparator for evaluating the quality of model responses.Read more on the Developer blog.As part of Google DeepMind’s mission to build AI responsibly to benefit humanity, we’ve always wanted to develop universal AI agents that can be helpful in everyday life. That’s why today, we’re sharing our progress in building the future of AI assistants with Project Astra (advanced seeing and talking responsive agent).To be truly useful, an agent needs to understand and respond to the complex and dynamic world just like people do — and take in and remember what it sees and hears to understand context and take action. It also needs to be proactive, teachable and personal, so users can talk to it naturally and without lag or delay.While we’ve made incredible progress developing AI systems that can understand multimodal information, getting response time down to something conversational is a difficult engineering challenge. Over the past few years, we’ve been working to improve how our models perceive, reason and converse to make the pace and quality of interaction feel more natural.Building on Gemini, we’ve developed prototype agents that can process information faster by continuously encoding video frames, combining the video and speech input into a timeline of events, and caching this information for efficient recall.By leveraging our leading speech models, we also enhanced how they sound, giving the agents a wider range of intonations. These agents can better understand the context they’re being used in, and respond quickly, in conversation.With technology like this, it’s easy to envision a future where people could have an expert AI assistant by their side, through a phone or glasses. And some of these capabilities are coming to Google products, like the Gemini app and web experience, later this year.We’ve made incredible progress so far with our family of Gemini models, and we’re always striving to advance the state-of-the-art even further. By investing in a relentless production line of innovation, we’re able to explore new ideas at the frontier, while also unlocking the possibility of new and exciting Gemini use cases.Learn more about Gemini and its capabilities. Your information will be used in accordance with Google’s privacy policy.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      Done. Just one step more.
     
       Check your inbox to confirm your subscription.
     You are already subscribed to our newsletter.
@@ -104,16 +355,16 @@ Content 2
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtab</span><span class="w"> </span><span class="cp">%}</span>
 
 <span class="cp">{%</span><span class="w"> </span><span class="nt">endtabs</span><span class="w"> </span><span class="cp">%}</span>
-</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="b56bc9d8-bb70-4723-8fe1-45824c4b0337" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="b56bc9d8-bb70-4723-8fe1-45824c4b0337" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
+</code></pre></div></div> <p>With this you can generate visualizations like:</p> <ul id="log" class="tab" data-tab="650de943-2e76-433f-a98f-cefd8ed2fbfd" data-name="log"> <li class="active" id="log-php"> <a href="#">php </a> </li> <li id="log-js"> <a href="#">js </a> </li> <li id="log-ruby"> <a href="#">ruby </a> </li> </ul> <ul class="tab-content" id="650de943-2e76-433f-a98f-cefd8ed2fbfd" data-name="log"> <li class="active"> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">hello</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div> </li> <li> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pputs</span> <span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span>
-</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="0c8f23e5-30bc-4af2-be25-be8931b0a198" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="0c8f23e5-30bc-4af2-be25-be8931b0a198" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
+</code></pre></div></div> </li> </ul> <h2 id="another-example">Another example</h2> <ul id="data-struct" class="tab" data-tab="103d3f23-a2d1-4671-b833-f8e29b7012df" data-name="data-struct"> <li class="active" id="data-struct-yaml"> <a href="#">yaml </a> </li> <li id="data-struct-json"> <a href="#">json </a> </li> </ul> <ul class="tab-content" id="103d3f23-a2d1-4671-b833-f8e29b7012df" data-name="data-struct"> <li class="active"> <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">whatsup"</span>
   <span class="pi">-</span> <span class="s2">"</span><span class="s">hi"</span>
 </code></pre></div></div> </li> <li> <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"hello"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"whatsup"</span><span class="p">,</span><span class="w"> </span><span class="s2">"hi"</span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="3aab2d67-3066-4ae0-afce-f3b634ab3d34" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="3aab2d67-3066-4ae0-afce-f3b634ab3d34" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://byronthecoder.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://byronthecoder.github.io/blog/2024/typograms</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
+</span></code></pre></div></div> </li> </ul> <h2 id="tabs-for-something-else">Tabs for something else</h2> <ul id="something-else" class="tab" data-tab="f7560fd2-4079-46a1-aee2-0d587fdcf78e" data-name="something-else"> <li class="active" id="something-else-text"> <a href="#">text </a> </li> <li id="something-else-quote"> <a href="#">quote </a> </li> <li id="something-else-list"> <a href="#">list </a> </li> </ul> <ul class="tab-content" id="f7560fd2-4079-46a1-aee2-0d587fdcf78e" data-name="something-else"> <li class="active"> <p>Regular text</p> </li> <li> <blockquote> <p>A quote</p> </blockquote> </li> <li> <p>Hipster list</p> <ul> <li>brunch</li> <li>fixie</li> <li>raybans</li> <li>messenger bag</li> </ul> </li> </ul>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included tabs in a post could look like]]></summary></entry><entry><title type="html">a post with typograms</title><link href="https://byronthecoder.github.io/blog/2024/typograms/" rel="alternate" type="text/html" title="a post with typograms"/><published>2024-04-29T23:36:10+00:00</published><updated>2024-04-29T23:36:10+00:00</updated><id>https://byronthecoder.github.io/blog/2024/typograms</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/typograms/"><![CDATA[<p>This is an example post with some <a href="https://github.com/google/typograms/">typograms</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">typograms
 </span><span class="sb">+----+
 |    |---&gt; My first diagram!
 +----+</span>
@@ -219,530 +470,4 @@ Content 2
 \ENDPROCEDURE
 \end{algorithmic}
 \end{algorithm}
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry><entry><title type="html">a post with code diff</title><link href="https://byronthecoder.github.io/blog/2024/code-diff/" rel="alternate" type="text/html" title="a post with code diff"/><published>2024-01-27T19:22:00+00:00</published><updated>2024-01-27T19:22:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/code-diff</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/code-diff/"><![CDATA[<p>You can display diff code by using the regular markdown syntax:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff
-</span><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
-</span><span class="gd">--- a/sample.js
-</span><span class="gi">+++ b/sample.js
-</span><span class="p">@@ -1 +1 @@</span>
-<span class="gd">-console.log("Hello World!")
-</span><span class="gi">+console.log("Hello from Diff2Html!")
-</span></code></pre></div></div> <p>But this is difficult to read, specially if you have a large diff. You can use <a href="https://diff2html.xyz/">diff2html</a> to display a more readable version of the diff. For this, just use <code class="language-plaintext highlighter-rouge">diff2html</code> instead of <code class="language-plaintext highlighter-rouge">diff</code> for the code block language:</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">diff2html
-</span><span class="sb">diff --git a/sample.js b/sample.js
-index 0000001..0ddf2ba
---- a/sample.js
-+++ b/sample.js
-@@ -1 +1 @@
--console.log("Hello World!")
-+console.log("Hello from Diff2Html!")</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>If we use a longer example, for example <a href="https://github.com/rtfpessoa/diff2html/commit/c2c253d3e3f8b8b267f551e659f72b44ca2ac927">this commit from diff2html</a>, it will generate the following output:</p> <pre><code class="language-diff2html">From 2aaae31cc2a37bfff83430c2c914b140bee59b6a Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sun, 9 Oct 2016 16:41:54 +0100
-Subject: [PATCH 1/2] Initial template override support
-
----
- scripts/hulk.js                    |  4 ++--
- src/diff2html.js                   |  3 +--
- src/file-list-printer.js           | 11 ++++++++---
- src/hoganjs-utils.js               | 29 +++++++++++++++++------------
- src/html-printer.js                |  6 ++++++
- src/line-by-line-printer.js        |  6 +++++-
- src/side-by-side-printer.js        |  6 +++++-
- test/file-list-printer-tests.js    |  2 +-
- test/hogan-cache-tests.js          | 18 +++++++++++++++---
- test/line-by-line-tests.js         |  3 +--
- test/side-by-side-printer-tests.js |  3 +--
- 11 files changed, 62 insertions(+), 29 deletions(-)
-
-diff --git a/scripts/hulk.js b/scripts/hulk.js
-index 5a793c18..a4b1a4d5 100755
---- a/scripts/hulk.js
-+++ b/scripts/hulk.js
-@@ -173,11 +173,11 @@ function namespace(name) {
- // write a template foreach file that matches template extension
- templates = extractFiles(options.argv.remain)
-   .map(function(file) {
--    var openedFile = fs.readFileSync(file, 'utf-8');
-+    var openedFile = fs.readFileSync(file, 'utf-8').trim();
-     var name;
-     if (!openedFile) return;
-     name = namespace(path.basename(file).replace(/\..*$/, ''));
--    openedFile = removeByteOrderMark(openedFile.trim());
-+    openedFile = removeByteOrderMark(openedFile);
-     openedFile = wrap(file, name, openedFile);
-     if (!options.outputdir) return openedFile;
-     fs.writeFileSync(path.join(options.outputdir, name + '.js')
-diff --git a/src/diff2html.js b/src/diff2html.js
-index 21b0119e..64e138f5 100644
---- a/src/diff2html.js
-+++ b/src/diff2html.js
-@@ -7,7 +7,6 @@
-
- (function() {
-   var diffParser = require('./diff-parser.js').DiffParser;
--  var fileLister = require('./file-list-printer.js').FileListPrinter;
-   var htmlPrinter = require('./html-printer.js').HtmlPrinter;
-
-   function Diff2Html() {
-@@ -43,7 +42,7 @@
-
-     var fileList = '';
-     if (configOrEmpty.showFiles === true) {
--      fileList = fileLister.generateFileList(diffJson, configOrEmpty);
-+      fileList = htmlPrinter.generateFileListSummary(diffJson, configOrEmpty);
-     }
-
-     var diffOutput = '';
-diff --git a/src/file-list-printer.js b/src/file-list-printer.js
-index e408d9b2..1e0a2c61 100644
---- a/src/file-list-printer.js
-+++ b/src/file-list-printer.js
-@@ -8,11 +8,16 @@
- (function() {
-   var printerUtils = require('./printer-utils.js').PrinterUtils;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var baseTemplatesPath = 'file-summary';
-   var iconsBaseTemplatesPath = 'icon';
-
--  function FileListPrinter() {
-+  function FileListPrinter(config) {
-+    this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   FileListPrinter.prototype.generateFileList = function(diffFiles) {
-@@ -38,5 +43,5 @@
-     });
-   };
-
--  module.exports.FileListPrinter = new FileListPrinter();
-+  module.exports.FileListPrinter = FileListPrinter;
- })();
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 9949e5fa..0dda08d7 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -8,18 +8,19 @@
- (function() {
-   var fs = require('fs');
-   var path = require('path');
--
-   var hogan = require('hogan.js');
-
-   var hoganTemplates = require('./templates/diff2html-templates.js');
-
--  var templatesPath = path.resolve(__dirname, 'templates');
-+  var extraTemplates;
-
--  function HoganJsUtils() {
-+  function HoganJsUtils(configuration) {
-+    this.config = configuration || {};
-+    extraTemplates = this.config.templates || {};
-   }
-
--  HoganJsUtils.prototype.render = function(namespace, view, params, configuration) {
--    var template = this.template(namespace, view, configuration);
-+  HoganJsUtils.prototype.render = function(namespace, view, params) {
-+    var template = this.template(namespace, view);
-     if (template) {
-       return template.render(params);
-     }
-@@ -27,17 +28,16 @@
-     return null;
-   };
-
--  HoganJsUtils.prototype.template = function(namespace, view, configuration) {
--    var config = configuration || {};
-+  HoganJsUtils.prototype.template = function(namespace, view) {
-     var templateKey = this._templateKey(namespace, view);
-
--    return this._getTemplate(templateKey, config);
-+    return this._getTemplate(templateKey);
-   };
-
--  HoganJsUtils.prototype._getTemplate = function(templateKey, config) {
-+  HoganJsUtils.prototype._getTemplate = function(templateKey) {
-     var template;
-
--    if (!config.noCache) {
-+    if (!this.config.noCache) {
-       template = this._readFromCache(templateKey);
-     }
-
-@@ -53,6 +53,7 @@
-
-     try {
-       if (fs.readFileSync) {
-+        var templatesPath = path.resolve(__dirname, 'templates');
-         var templatePath = path.join(templatesPath, templateKey);
-         var templateContent = fs.readFileSync(templatePath + '.mustache', 'utf8');
-         template = hogan.compile(templateContent);
-@@ -66,12 +67,16 @@
-   };
-
-   HoganJsUtils.prototype._readFromCache = function(templateKey) {
--    return hoganTemplates[templateKey];
-+    return extraTemplates[templateKey] || hoganTemplates[templateKey];
-   };
-
-   HoganJsUtils.prototype._templateKey = function(namespace, view) {
-     return namespace + '-' + view;
-   };
-
--  module.exports.HoganJsUtils = new HoganJsUtils();
-+  HoganJsUtils.prototype.compile = function(templateStr) {
-+    return hogan.compile(templateStr);
-+  };
-+
-+  module.exports.HoganJsUtils = HoganJsUtils;
- })();
-diff --git a/src/html-printer.js b/src/html-printer.js
-index 585d5b66..13f83047 100644
---- a/src/html-printer.js
-+++ b/src/html-printer.js
-@@ -8,6 +8,7 @@
- (function() {
-   var LineByLinePrinter = require('./line-by-line-printer.js').LineByLinePrinter;
-   var SideBySidePrinter = require('./side-by-side-printer.js').SideBySidePrinter;
-+  var FileListPrinter = require('./file-list-printer.js').FileListPrinter;
-
-   function HtmlPrinter() {
-   }
-@@ -22,5 +23,10 @@
-     return sideBySidePrinter.generateSideBySideJsonHtml(diffFiles);
-   };
-
-+  HtmlPrinter.prototype.generateFileListSummary = function(diffJson, config) {
-+    var fileListPrinter = new FileListPrinter(config);
-+    return fileListPrinter.generateFileList(diffJson);
-+  };
-+
-   module.exports.HtmlPrinter = new HtmlPrinter();
- })();
-diff --git a/src/line-by-line-printer.js b/src/line-by-line-printer.js
-index b07eb53c..d230bedd 100644
---- a/src/line-by-line-printer.js
-+++ b/src/line-by-line-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'line-by-line';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -19,6 +20,9 @@
-
-   function LineByLinePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   LineByLinePrinter.prototype.makeFileDiffHtml = function(file, diffs) {
-diff --git a/src/side-by-side-printer.js b/src/side-by-side-printer.js
-index bbf1dc8d..5e3033b3 100644
---- a/src/side-by-side-printer.js
-+++ b/src/side-by-side-printer.js
-@@ -11,7 +11,8 @@
-   var utils = require('./utils.js').Utils;
-   var Rematch = require('./rematch.js').Rematch;
-
--  var hoganUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+  var hoganUtils;
-+
-   var genericTemplatesPath = 'generic';
-   var baseTemplatesPath = 'side-by-side';
-   var iconsBaseTemplatesPath = 'icon';
-@@ -26,6 +27,9 @@
-
-   function SideBySidePrinter(config) {
-     this.config = config;
-+
-+    var HoganJsUtils = require('./hoganjs-utils.js').HoganJsUtils;
-+    hoganUtils = new HoganJsUtils(config);
-   }
-
-   SideBySidePrinter.prototype.makeDiffHtml = function(file, diffs) {
-diff --git a/test/file-list-printer-tests.js b/test/file-list-printer-tests.js
-index a502a46f..60ea3208 100644
---- a/test/file-list-printer-tests.js
-+++ b/test/file-list-printer-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var fileListPrinter = require('../src/file-list-printer.js').FileListPrinter;
-+var fileListPrinter = new (require('../src/file-list-printer.js').FileListPrinter)();
-
- describe('FileListPrinter', function() {
-   describe('generateFileList', function() {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 190bf6f8..3bb754ac 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -1,6 +1,6 @@
- var assert = require('assert');
-
--var HoganJsUtils = require('../src/hoganjs-utils.js').HoganJsUtils;
-+var HoganJsUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)();
- var diffParser = require('../src/diff-parser.js').DiffParser;
-
- describe('HoganJsUtils', function() {
-@@ -21,16 +21,28 @@ describe('HoganJsUtils', function() {
-       });
-       assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should render view without cache', function() {
-       var result = HoganJsUtils.render('generic', 'empty-diff', {
-         contentClass: 'd2h-code-line',
-         diffParser: diffParser
-       }, {noCache: true});
--      assert.equal(emptyDiffHtml + '\n', result);
-+      assert.equal(emptyDiffHtml, result);
-     });
-+
-     it('should return null if template is missing', function() {
--      var result = HoganJsUtils.render('generic', 'missing-template', {}, {noCache: true});
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)({noCache: true});
-+      var result = hoganUtils.render('generic', 'missing-template', {});
-       assert.equal(null, result);
-     });
-+
-+    it('should allow templates to be overridden', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+
-+      var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-diff --git a/test/line-by-line-tests.js b/test/line-by-line-tests.js
-index 1cd92073..8869b3df 100644
---- a/test/line-by-line-tests.js
-+++ b/test/line-by-line-tests.js
-@@ -14,7 +14,7 @@ describe('LineByLinePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expected, fileHtml);
-     });
-@@ -422,7 +422,6 @@ describe('LineByLinePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                &lt;/tbody&gt;\n' +
-         '            &lt;/table&gt;\n' +
-         '        &lt;/div&gt;\n' +
-diff --git a/test/side-by-side-printer-tests.js b/test/side-by-side-printer-tests.js
-index 76625f8e..771daaa5 100644
---- a/test/side-by-side-printer-tests.js
-+++ b/test/side-by-side-printer-tests.js
-@@ -14,7 +14,7 @@ describe('SideBySidePrinter', function() {
-         '            File without changes\n' +
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
--        '&lt;/tr&gt;\n';
-+        '&lt;/tr&gt;';
-
-       assert.equal(expectedRight, fileHtml.right);
-       assert.equal(expectedLeft, fileHtml.left);
-@@ -324,7 +324,6 @@ describe('SideBySidePrinter', function() {
-         '        &lt;/div&gt;\n' +
-         '    &lt;/td&gt;\n' +
-         '&lt;/tr&gt;\n' +
--        '\n' +
-         '                    &lt;/tbody&gt;\n' +
-         '                &lt;/table&gt;\n' +
-         '            &lt;/div&gt;\n' +
-
-From f3cadb96677d0eb82fc2752dc3ffbf35ca9b5bdb Mon Sep 17 00:00:00 2001
-From: Rodrigo Fernandes &lt;rtfrodrigo@gmail.com&gt;
-Date: Sat, 15 Oct 2016 13:21:22 +0100
-Subject: [PATCH 2/2] Allow uncompiled templates
-
----
- README.md                 |  3 +++
- src/hoganjs-utils.js      |  7 +++++++
- test/hogan-cache-tests.js | 24 +++++++++++++++++++++++-
- 3 files changed, 33 insertions(+), 1 deletion(-)
-
-diff --git a/README.md b/README.md
-index 132c8a28..46909f25 100644
---- a/README.md
-+++ b/README.md
-@@ -98,6 +98,9 @@ The HTML output accepts a Javascript object with configuration. Possible options
-   - `synchronisedScroll`: scroll both panes in side-by-side mode: `true` or `false`, default is `false`
-   - `matchWordsThreshold`: similarity threshold for word matching, default is 0.25
-   - `matchingMaxComparisons`: perform at most this much comparisons for line matching a block of changes, default is `2500`
-+  - `templates`: object with previously compiled templates to replace parts of the html
-+  - `rawTemplates`: object with raw not compiled templates to replace parts of the html
-+  &gt; For more information regarding the possible templates look into [src/templates](https://github.com/rtfpessoa/diff2html/tree/master/src/templates)
-
- ## Diff2HtmlUI Helper
-
-diff --git a/src/hoganjs-utils.js b/src/hoganjs-utils.js
-index 0dda08d7..b2e9c275 100644
---- a/src/hoganjs-utils.js
-+++ b/src/hoganjs-utils.js
-@@ -17,6 +17,13 @@
-   function HoganJsUtils(configuration) {
-     this.config = configuration || {};
-     extraTemplates = this.config.templates || {};
-+
-+    var rawTemplates = this.config.rawTemplates || {};
-+    for (var templateName in rawTemplates) {
-+      if (rawTemplates.hasOwnProperty(templateName)) {
-+        if (!extraTemplates[templateName]) extraTemplates[templateName] = this.compile(rawTemplates[templateName]);
-+      }
-+    }
-   }
-
-   HoganJsUtils.prototype.render = function(namespace, view, params) {
-diff --git a/test/hogan-cache-tests.js b/test/hogan-cache-tests.js
-index 3bb754ac..a34839c0 100644
---- a/test/hogan-cache-tests.js
-+++ b/test/hogan-cache-tests.js
-@@ -36,7 +36,7 @@ describe('HoganJsUtils', function() {
-       assert.equal(null, result);
-     });
-
--    it('should allow templates to be overridden', function() {
-+    it('should allow templates to be overridden with compiled templates', function() {
-       var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-
-       var config = {templates: {'generic-empty-diff': emptyDiffTemplate}};
-@@ -44,5 +44,27 @@ describe('HoganJsUtils', function() {
-       var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-       assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-     });
-+
-+    it('should allow templates to be overridden with uncompiled templates', function() {
-+      var emptyDiffTemplate = '&lt;p&gt;&lt;/p&gt;';
-+
-+      var config = {rawTemplates: {'generic-empty-diff': emptyDiffTemplate}};
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-+
-+    it('should allow templates to be overridden giving priority to compiled templates', function() {
-+      var emptyDiffTemplate = HoganJsUtils.compile('&lt;p&gt;&lt;/p&gt;');
-+      var emptyDiffTemplateUncompiled = '&lt;p&gt;Not used!&lt;/p&gt;';
-+
-+      var config = {
-+        templates: {'generic-empty-diff': emptyDiffTemplate},
-+        rawTemplates: {'generic-empty-diff': emptyDiffTemplateUncompiled}
-+      };
-+      var hoganUtils = new (require('../src/hoganjs-utils.js').HoganJsUtils)(config);
-+      var result = hoganUtils.render('generic', 'empty-diff', {myName: 'Rodrigo Fernandes'});
-+      assert.equal('&lt;p&gt;Rodrigo Fernandes&lt;/p&gt;', result);
-+    });
-   });
- });
-</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is how you can display code diffs]]></summary></entry><entry><title type="html">a post with advanced image components</title><link href="https://byronthecoder.github.io/blog/2024/advanced-images/" rel="alternate" type="text/html" title="a post with advanced image components"/><published>2024-01-27T11:46:00+00:00</published><updated>2024-01-27T11:46:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/advanced-images</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/advanced-images/"><![CDATA[<p>This is an example post with advanced image components.</p> <h2 id="image-slider">Image Slider</h2> <p>This is a simple image slider. It uses the <a href="https://swiperjs.com/">Swiper</a> library. Check the <a href="https://swiperjs.com/demos">examples page</a> for more information of what you can achieve with it.</p> <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true"> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/9-480.webp 480w,/assets/img/9-800.webp 800w,/assets/img/9-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/9.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/7-480.webp 480w,/assets/img/7-800.webp 800w,/assets/img/7-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/7.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/8-480.webp 480w,/assets/img/8-800.webp 800w,/assets/img/8-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/8.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/10-480.webp 480w,/assets/img/10-800.webp 800w,/assets/img/10-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/10.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> <swiper-slide> <figure> <picture> <source class="responsive-img-srcset" srcset="/assets/img/12-480.webp 480w,/assets/img/12-800.webp 800w,/assets/img/12-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/12.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </swiper-slide> </swiper-container> <h2 id="image-comparison-slider">Image Comparison Slider</h2> <p>This is a simple image comparison slider. It uses the <a href="https://img-comparison-slider.sneas.io/">img-comparison-slider</a> library. Check the <a href="https://img-comparison-slider.sneas.io/examples.html">examples page</a> for more information of what you can achieve with it.</p> <img-comparison-slider> <figure slot="first"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic-480.webp 480w,/assets/img/prof_pic-800.webp 800w,/assets/img/prof_pic-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> <figure slot="second"> <picture> <source class="responsive-img-srcset" srcset="/assets/img/prof_pic_color-480.webp 480w,/assets/img/prof_pic_color-800.webp 800w,/assets/img/prof_pic_color-1400.webp 1400w," type="image/webp" sizes="95vw"/> <img src="/assets/img/prof_pic_color.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"/> </picture> </figure> </img-comparison-slider>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="images"/><summary type="html"><![CDATA[this is what advanced image components could look like]]></summary></entry><entry><title type="html">a post with vega lite</title><link href="https://byronthecoder.github.io/blog/2024/vega-lite/" rel="alternate" type="text/html" title="a post with vega lite"/><published>2024-01-27T00:20:00+00:00</published><updated>2024-01-27T00:20:00+00:00</updated><id>https://byronthecoder.github.io/blog/2024/vega-lite</id><content type="html" xml:base="https://byronthecoder.github.io/blog/2024/vega-lite/"><![CDATA[<p>This is an example post with some <a href="https://vega.github.io/vega-lite/">vega lite</a> code.</p> <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">vega_lite
-</span><span class="sb">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}</span>
-<span class="p">```</span>
-</code></pre></div></div> <p>Which generates:</p> <pre><code class="language-vega_lite">{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "A dot plot showing each movie in the database, and the difference from the average movie rating. The display is sorted by year to visualize everything in sequential order. The graph is for all Movies before 2019.",
-  "data": {
-    "url": "https://raw.githubusercontent.com/vega/vega/main/docs/data/movies.json"
-  },
-  "transform": [
-    {"filter": "datum['IMDB Rating'] != null"},
-    {"filter": {"timeUnit": "year", "field": "Release Date", "range": [null, 2019]}},
-    {
-      "joinaggregate": [{
-        "op": "mean",
-        "field": "IMDB Rating",
-        "as": "AverageRating"
-      }]
-    },
-    {
-      "calculate": "datum['IMDB Rating'] - datum.AverageRating",
-      "as": "RatingDelta"
-    }
-  ],
-  "mark": "point",
-  "encoding": {
-    "x": {
-      "field": "Release Date",
-      "type": "temporal"
-    },
-    "y": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "title": "Rating Delta"
-    },
-    "color": {
-      "field": "RatingDelta",
-      "type": "quantitative",
-      "scale": {"domainMid": 0},
-      "title": "Rating Delta"
-    }
-  }
-}
-</code></pre> <p>This plot supports both light and dark themes.</p>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="charts"/><summary type="html"><![CDATA[this is what included vega lite code could look like]]></summary></entry></feed>
+</code></pre>]]></content><author><name></name></author><category term="sample-posts"/><category term="formatting"/><category term="code"/><summary type="html"><![CDATA[this is what included pseudo code could look like]]></summary></entry></feed>

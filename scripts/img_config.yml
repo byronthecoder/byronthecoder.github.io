@@ -1,0 +1,59 @@
+# Image Processing Configuration
+output_dir: "assets/img/publication_preview"
+
+# Resize settings
+resize:
+  enabled: false
+  width: 800
+  height: 600
+  maintain_aspect_ratio: true
+  high_quality: true
+
+# Placeholder image settings
+placeholder:
+  enabled: false
+  width: 400
+  height: 300
+  bg_color: "#f8f9fa"
+  border_color: "#dee2e6"
+  header_color: "#007bff"
+  text_color: "#343a40"
+  header_text: "Research Paper"
+
+# Enhancement settings
+enhance:
+  enabled: false
+  add_header: true
+  add_border: true
+  add_icon: true
+  header_height: 50
+  header_color: "#007bff"
+  border_color: "#dee2e6"
+  icon_color: "#28a745"
+
+# Compression settings
+compress:
+  enabled: false
+  quality: 10
+  optimize: false
+
+# Thumbnail settings
+thumbnail:
+  enabled: false
+  width: 200
+  height: 150
+  suffix: "_thumb"
+
+# Backup settings
+backup:
+  enabled: true
+  dir: "originals"
+
+# Font settings
+fonts:
+  large:
+    path: "/System/Library/Fonts/Helvetica.ttc"
+    size: 24
+  small:
+    path: "/System/Library/Fonts/Helvetica.ttc"
+    size: 16
