@@ -5,6 +5,7 @@ title: teaching
 description: Teaching experience and educational contributions across multiple institutions and languages.
 nav: false
 nav_order: 6
+published: false
 ---
 
 ## Teaching Philosophy
