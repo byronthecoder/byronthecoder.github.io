@@ -42,7 +42,20 @@ ninja.data = [{
           section: "News",},{id: "news-started-my-postdoctoral-position-at-laboratoire-parole-et-langage-lpl-aix-marseille-university-working-with-dr-leonardo-lancia-on-the-prosody-as-dynamic-coordinative-device-project",
           title: 'Started my postdoctoral position at Laboratoire Parole et Langage (LPL), Aix-Marseille University, working...',
           description: "",
-          section: "News",},{id: "projects-speech-entrainment-detection",
+          section: "News",},{id: "news-attended-the-journées-d-études-sur-la-parole-jep-2026-in-montpellier-june-8-12-and-presented-two-posters-1-articulatory-bases-of-acoustic-amplitude-rhythmic-modulations-poster-73-with-leonardo-lancia-and-2-multi-tier-forced-alignment-for-the-mocha-timit-corpus-poster-83-with-leonardo-lancia",
+          title: '🇫🇷 Attended the Journées d’Études sur la Parole (JEP) 2026 in Montpellier (June...',
+          description: "",
+          section: "News",},{id: "projects-axb-art-speech-similarity-experiment",
+          title: 'AXB-ART Speech Similarity Experiment',
+          description: "A web-based, browser-runnable A–X–B similarity-judgement experiment for comparing speech samples.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/axb_experiment/";
+            },},{id: "projects-mocha-timit-explorer",
+          title: 'MOCHA-TIMIT Explorer',
+          description: "An interactive web explorer for the MOCHA-TIMIT articulatory corpus — browse, filter, and inspect synchronized audio, EMA, EPG, and EGG signals with Praat-style multi-tier annotations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mocha_timit_viewer/";
+            },},{id: "projects-speech-entrainment-detection",
           title: 'Speech Entrainment Detection',
           description: "Deep neural networks for detecting speech entrainment in conversational interactions",
           section: "Projects",handler: () => {
