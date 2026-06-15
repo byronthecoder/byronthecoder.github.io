@@ -18,7 +18,11 @@
   - firstname: ["Luciano"]
     url: https://scholar.google.com/citations?user=EPOtdwMAAAAJ
 
-"D’Ausilio":
+"d'ausilio":
+  - firstname: ["Alessandro"]
+    url: https://scholar.google.com/citations?user=uKn-9MoAAAAJ
+
+"d?ausilio":
   - firstname: ["Alessandro"]
     url: https://scholar.google.com/citations?user=uKn-9MoAAAAJ
 
@@ -29,6 +33,10 @@
 "nguyen":
   - firstname: ["Noël"]
     url: https://scholar.google.com/citations?user=p6KlzsMAAAAJ
+
+"lancia":
+  - firstname: ["Leonardo"]
+    url: https://scholar.google.com/citations?user=gry6-JYAAAAJ
 
 # "feng":
 #   - firstname: ["Ruitao"]

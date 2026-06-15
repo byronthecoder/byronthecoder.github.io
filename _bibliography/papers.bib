@@ -30,7 +30,7 @@
 
 @inproceedings{yuan23b_interspeech,
   title={The ART of Conversation: Measuring Phonetic Convergence and Deliberate Imitation in L2-Speech with a Siamese RNN},
-  author={Zheng Yuan and Aldo Pastore and Dorina {de Jong} and Hao Xu and Luciano Fadiga and Alessandro {D'Ausilio}},
+  author={Zheng Yuan and Aldo Pastore and Dorina {de Jong} and Hao Xu and Luciano Fadiga and {D'Ausilio}, Alessandro},
   month = {august},
   year={2023},
   booktitle={Interspeech 2023},
@@ -46,7 +46,7 @@
 
 @inproceedings{yuan-etal-2024-art,
   title={ART: The Alternating Reading Task Corpus for Speech Entrainment and Imitation},
-  author={Zheng Yuan and Dorina {de Jong} and Štefan Beňuš and No{\"e}l Nguyen and Ruitao Feng and R{\'o}bert Sabo and Luciano Fadiga and Alessandro {D'Ausilio}},
+  author={Zheng Yuan and Dorina {de Jong} and Štefan Beňuš and No{\"e}l Nguyen and Ruitao Feng and R{\'o}bert Sabo and Luciano Fadiga and {D'Ausilio}, Alessandro},
   editor={Calzolari, Nicoletta and Kan, Min-Yen and Hoste, Veronique and Lenci, Alessandro and Sakti, Sakriani and Xue, Nianwen},
   booktitle={Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
   month={may},
@@ -63,7 +63,7 @@
 
 @inproceedings{yuan24b_speechprosody,
   title={Language Proficiency and F0 Entrainment: A Study of L2 English Imitation in Italian, French, and Slovak Speakers},
-  author={Zheng Yuan and Štefan Beňuš and Alessandro {D'Ausilio}},
+  author={Zheng Yuan and Štefan Beňuš and {D'Ausilio}, Alessandro},
   month = {july},
   year={2024},
   booktitle={Speech Prosody 2024},
@@ -89,5 +89,70 @@
   abstract={We investigate how COVID-19 affects breathing patterns during speech production and how these changes impact speech perception. Our study reveals significant alterations in respiratory control that influence both speech quality and listener comprehension.},
   html={https://www.isca-speech.org/archive/speechprosody_2024/jiang24_speechprosody.html},
   preview={covid_breathing.png},
+  bibtex_show={true}
+}
+
+@inproceedings{yuan_lancia_jep2026_rhythm,
+  title={Articulatory Bases of Acoustic Amplitude Rhythmic Modulations},
+  author={Lancia, Leonardo and Yuan, Zheng},
+  month={june},
+  year={2026},
+  booktitle={Journ{\'e}es d'{\'E}tudes sur la Parole (JEP) 2026},
+  address={Montpellier, France},
+  note={Poster \#73},
+  abstract={The prevailing view says syllabic rhythm is all about the jaw. We tested that — evidence from the MOCHA-TIMIT dataset (460 sentences, 9 British English speakers) by extracting syllabic and supra-syllabic modulations from acoustic, articulatory (EMA, EPG) and laryngographic (EGG) signals, and measuring pairwise phase consistency between articulatory and acoustic modulations. Results show that the larynx is the real driver of acoustic amplitude rhythmic modulations; the contribution of the jaw is completely mediated by the larynx.},
+  poster={https://www.researchgate.net/publication/406472319_Articulatory_Bases_of_Acoustic_Amplitude_Rhythmic_Modulations},
+  preview={jep2026_rhythm.png},
+  bibtex_show={true},
+  selected={true}
+}
+
+@inproceedings{yuan_lancia_jep2026_mocha,
+  title={Multi-Tier Forced Alignment for the {MOCHA-TIMIT} Corpus},
+  author={Yuan, Zheng and Lancia, Leonardo},
+  month={june},
+  year={2026},
+  booktitle={Journ{\'e}es d''{\'E}tudes sur la Parole (JEP) 2026},
+  address={Montpellier, France},
+  note={Poster \#83},
+  abstract={MOCHA-TIMIT provides synchronized multimodal recordings (audio, EMA, EPG, laryngograph) for 9 speakers and 3,996 utterances, yet only 2 speakers had been manually cleaned for use. We present a five-stage validation pipeline---binary decoding, filename reconciliation, quality control, forced alignment, and multi-tier generation---that unlocks the full 9-speaker corpus. Comparing US and UK MFA models with G2P augmentation, the UK+G2P model achieves 80.5{\%} phoneme accuracy, a 9.3{\%} improvement over the US baseline driven by a 59{\%} reduction in deletion rate. The final output is an enriched 8-tier TextGrid corpus with phonemic, syllabic, and prosodic annotations. Using this corpus, we demonstrate three downstream applications: laryngeal vs. jaw control of syllabic rhythm, cross-accent verification via multimodal acoustic--articulatory analysis, and an acoustic-to-articulatory proxy model.},
+  poster={https://www.researchgate.net/publication/406459790_Multi-Tier_Forced_Alignment_for_the_MOCHA-TIMIT_Corpus},
+  preview={jep2026_mocha.png},
+  bibtex_show={true},
+  selected={true}
+}
+
+@misc{mythner2026,
+  title={{MythNER}: Multi-Agent {NER} Extraction and Benchmarking in Chinese Myth Narratives},
+  author={Yuan, Zheng and Feng, Ruitao and Shen, Qingye and Zhang, Fengyong and Zhang, Zhihua and Liang, Sheng},
+  month={january},
+  year={2026},
+  booktitle={Proceedings of the ACL ARR 2026 (Under Review)},
+  howpublished={OpenReview submission \#8178},
+  url={https://openreview.net/forum?id=Tpq4Acgbja},
+  note={Under review},
+  abstract={We introduce MythNER, a culturally grounded coarse-grained NER benchmark for Chinese mythology built from Ne Zha subtitle text with four labels (PER/LOC/ORG/OBJ) and conservative annotation criteria. We evaluate a zero-shot Chinese spaCy model, a supervised BERT token-classification baseline, and a multi-agent LLM extraction pipeline on the held-out Ne Zha Part 2 test set. Results show substantial domain shift for off-the-shelf NER, strong gains from supervised adaptation, and further improvements from agentic extraction under well-chosen constraints.},
+  pdf={mythner_2026.pdf},
+  html={https://openreview.net/forum?id=Tpq4Acgbja},
+  preview={mythner_2026.png},
+  bibtex_show={true},
+  selected={true}
+}
+
+@misc{feng_etal_steermoe_arxiv,
+  title={{Steer-MoE}: Efficient Audio-Language Alignment with a Mixture-of-Experts Steering Module},
+  author={Feng, Ruitao and Zhang, Bixi and Liang, Sheng and Yuan, Zheng},
+  month={october},
+  year={2025},
+  booktitle={arXiv preprint arXiv:2510.13558},
+  eprint={2510.13558},
+  archivePrefix={arXiv},
+  primaryClass={cs.SD},
+  url={https://arxiv.org/abs/2510.13558},
+  note={Submitted to ICASSP 2026},
+  abstract={Aligning pretrained audio encoders and Large Language Models offers a parameter-efficient path to building multimodal agents. We introduce Steer-MoE, which freezes both the audio encoder and the LLM decoder and trains only a lightweight steering module integrated within the encoder's layers. This module uses a Mixture-of-Experts router to dynamically select and apply learned steering vectors, progressively transforming continuous audio representations into a space comprehensible to the LLM. Experiments on ASR, audio understanding, and a function-calling task show strong performance with high modularity and computational efficiency.},
+  code={https://github.com/forfrt/SteerMoE},
+  arxiv={2510.13558},
+  preview={steermoe_arxiv.png},
   bibtex_show={true}
 }
