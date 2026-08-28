@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-slides",
+          title: "slides",
+          description: "Presentation slides and talks.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/slides/";
+          },
         },{id: "news-our-team-achieved-2nd-place-in-the-bea-shared-task-2023-for-generating-ai-teacher-responses-in-educational-dialogues-excited-about-the-potential-applications-in-educational-technology",
           title: '🏆 Our team achieved 2nd place in the BEA Shared Task 2023 for...',
           description: "",
