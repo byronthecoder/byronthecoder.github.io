@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comments on Piantadosi (2024) — ILCB Summer School 2026</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --ink:#1a1a1a;
+    --muted:#6b6b6b;
+    --faint:#9a9a9a;
+    --line:#e4e4e4;
+    --accent:#D7263D;
+    --green:#2e7d32;
+    --amber:#f9a825;
+    --red:#c62828;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:var(--sans);
+    background:#e9e9ec;
+    color:var(--ink);
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  #stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;}
+  #deck{
+    position:absolute;top:50%;left:50%;
+    width:1280px;height:720px;
+    background:var(--bg);
+    box-shadow:0 12px 48px rgba(0,0,0,.20);
+    transform-origin:center center;
+  }
+  .slide{
+    position:absolute;inset:0;
+    display:none;
+    flex-direction:column;
+    padding:60px 72px;
+    background:var(--bg);
+  }
+  .slide.active{display:flex;}
+  .slide.split-layout.active{display:grid;}
+
+  /* ---- shared text ---- */
+  .kicker{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;font-weight:600;}
+  .slide-title{font-size:34px;font-weight:700;line-height:1.18;margin-bottom:22px;padding-bottom:14px;border-bottom:2px solid var(--line);}
+  .hl{color:var(--accent);font-weight:700;}
+  .strike{color:var(--faint);text-decoration:line-through;}
+  .note{font-size:19px;line-height:1.5;color:var(--ink);margin-top:18px;}
+  .example{font-family:var(--serif);font-style:italic;font-size:23px;line-height:1.45;color:var(--ink);}
+  .hl-box{margin-top:18px;padding:16px 20px;border-left:4px solid var(--accent);background:#fbf3f4;font-size:19px;line-height:1.5;}
+  .hl-box.small{font-size:17px;background:#f6f6f6;border-left-color:var(--muted);}
+  .cite{position:absolute;bottom:30px;right:72px;font-size:12.5px;color:var(--faint);font-family:var(--serif);}
+  .placeholder{margin-top:16px;border:2px dashed #c9c9c9;border-radius:8px;padding:14px 18px;color:var(--faint);font-size:14px;background:#fcfcfc;}
+
+  /* ---- title slide ---- */
+  .title-slide{justify-content:center;}
+  .title-eyebrow{font-size:18px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;font-weight:600;}
+  .title-main{font-size:46px;line-height:1.14;font-weight:700;max-width:560px;}
+  .title-sub{margin-top:22px;font-size:22px;color:var(--muted);}
+  .title-rule{height:3px;width:120px;background:var(--accent);margin:38px 0 26px;}
+  .title-meta{font-size:21px;line-height:1.5;}
+  .title-meta .presenter{font-weight:700;letter-spacing:.04em;}
+  .title-meta .byron{color:var(--muted);font-weight:400;}
+  .title-meta .affiliation{color:var(--muted);margin-top:4px;font-size:19px;}
+  .title-footer{position:absolute;bottom:46px;left:72px;font-size:16px;color:var(--faint);}
+  .title-fig{position:absolute;right:72px;top:50%;transform:translateY(-50%);width:560px;height:auto;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.15);}
+
+  /* ---- slide 1 two columns ---- */
+  .two-col{display:flex;gap:48px;flex:1;align-items:stretch;margin-top:6px;}
+  .panel{flex:1;border:1px solid var(--line);border-radius:10px;padding:24px 26px;display:flex;flex-direction:column;}
+  .panel-head{font-size:18px;font-weight:700;margin-bottom:14px;}
+  .panel-cap{margin-top:auto;font-size:15px;color:var(--muted);font-style:italic;}
+  .tree{width:100%;max-width:330px;align-self:center;}
+  .tree text{font-family:var(--serif);font-size:17px;fill:var(--ink);}
+  .tree line{stroke:#999;stroke-width:1.5;}
+  .flow{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:8px;}
+  .pill{border:1.5px solid var(--ink);border-radius:30px;padding:10px 22px;font-size:17px;font-weight:600;}
+  .arrow{color:var(--accent);font-size:22px;font-weight:700;}
+  .roadmap{margin-top:24px;background:#fafafa;border:1px solid var(--line);border-radius:10px;padding:18px 24px;}
+  .rk-q{font-size:18px;font-weight:700;margin-bottom:10px;}
+  .roadmap ul{list-style:none;display:flex;gap:30px;flex-wrap:wrap;}
+  .roadmap li{font-size:18px;line-height:1.4;max-width:360px;padding-left:18px;position:relative;}
+  .roadmap li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700;}
+
+  /* ---- slide 2 table ---- */
+  table.cmp{width:100%;border-collapse:collapse;margin-top:6px;font-size:19px;}
+  table.cmp th{text-align:left;padding:16px 20px;font-size:20px;border-bottom:3px solid var(--ink);}
+  table.cmp td{padding:16px 20px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.4;width:50%;}
+  table.cmp tr td:first-child{color:var(--muted);}
+  .cmp-cap{margin-top:18px;font-size:16px;color:var(--muted);font-style:italic;}
+
+  /* ---- slide 3 ---- */
+  .blank{border-bottom:2px solid var(--accent);display:inline-block;width:60px;color:var(--accent);font-style:normal;font-weight:700;}
+  .flow-h{margin-top:26px;font-size:17px;color:var(--muted);letter-spacing:.02em;}
+  .prob{margin-top:14px;display:flex;flex-direction:column;gap:10px;max-width:620px;}
+  .prob-row{display:flex;align-items:center;gap:14px;}
+  .pl{width:54px;font-family:var(--serif);font-style:italic;font-size:20px;}
+  .bar{flex:1;height:18px;background:#efefef;border-radius:4px;overflow:hidden;}
+  .fill{display:block;height:100%;background:var(--accent);}
+  .fill.dim{background:#cccccc;}
+  .pv{width:54px;text-align:right;font-size:17px;color:var(--muted);}
+
+  /* ---- slide 3 split layout ---- */
+  .slide.split-layout{display:none;grid-template-columns:1fr 1fr;grid-template-rows:auto auto 1fr;gap:0 44px;}
+  .split-layout .kicker{grid-column:1/-1;}
+  .split-layout .slide-title{grid-column:1/-1;}
+  .split-left{grid-column:1;grid-row:3;display:flex;flex-direction:column;gap:10px;}
+  .split-right{grid-column:2;grid-row:3;display:flex;flex-direction:column;justify-content:center;gap:14px;}
+  .fig-block{display:flex;flex-direction:column;align-items:center;}
+  .fig-block .fig-title{font-size:14px;font-weight:700;color:var(--muted);margin-bottom:6px;text-align:center;}
+  .fig-block img{height:206px;width:auto;max-width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);display:block;}
+
+  /* ---- slide 4 ---- */
+  .ex-pair{display:flex;flex-direction:column;gap:18px;margin-top:4px;}
+  .ex-block{}
+  .ex-label{font-size:15px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:6px;}
+  .dim-is{color:var(--faint);}
+
+  /* ---- slide 5 chain ---- */
+  .chain{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:6px;}
+  .chain-step{background:#fafafa;border:1px solid var(--line);border-radius:10px;padding:18px 28px;font-size:21px;line-height:1.45;text-align:center;max-width:860px;}
+  .chain-arrow{color:var(--accent);font-size:26px;font-weight:700;}
+  .chain-step.concl{background:#fbf3f4;border-color:var(--accent);font-weight:700;}
+
+  /* ---- slide 6 levels ---- */
+  .levels{display:flex;flex-direction:column;gap:14px;margin-top:4px;}
+  .level{border-radius:10px;padding:16px 22px;border-left:6px solid;display:flex;justify-content:space-between;align-items:center;}
+  .level.green{background:#f1f8f2;border-color:var(--green);}
+  .level.amber{background:#fef8e8;border-color:var(--amber);}
+  .level.red{background:#fdeced;border-color:var(--red);}
+  .lv-tag{font-size:21px;font-weight:700;}
+  .green .lv-tag{color:var(--green);}
+  .amber .lv-tag{color:#b8810b;}
+  .red .lv-tag{color:var(--red);}
+  .lv-desc{font-size:18px;color:var(--ink);flex:1;margin-left:24px;}
+  .lv-stat{font-style:italic;color:var(--muted);}
+
+  /* ---- slide 6 two-column correspondence ---- */
+  .s6-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:repeat(3,auto);gap:18px 44px;margin-top:10px;align-items:stretch;}
+  .s6-fig{display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .s6-fig img{width:180px;height:120px;object-fit:cover;border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);display:block;}
+  .s6-fig figcaption{margin-top:6px;font-size:13px;color:var(--muted);font-style:italic;font-family:var(--serif);text-align:center;}
+  .s6-note{grid-column:1/-1;margin-top:2px;font-size:18px;line-height:1.5;color:var(--ink);}
+
+  /* ---- slide 7 cards ---- */
+  .three-q{display:flex;gap:24px;margin-top:8px;}
+  .q-card{flex:1;border:1px solid var(--line);border-top:4px solid var(--accent);border-radius:10px;padding:22px 22px;display:flex;flex-direction:column;}
+  .q-n{font-size:22px;font-weight:700;margin-bottom:12px;}
+  .q-d{font-size:18px;line-height:1.45;color:var(--ink);}
+  .closing{margin-top:22px;font-size:20px;font-weight:600;text-align:center;}
+
+  /* ---- HUD ---- */
+  #hud{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);font-size:13px;color:#8a8a8a;background:rgba(255,255,255,.6);padding:4px 12px;border-radius:20px;}
+
+  @media print{
+    body{overflow:visible;background:#fff;}
+    #stage{position:static;display:block;}
+    #deck{position:static;transform:none!important;width:100%;height:auto;box-shadow:none;}
+    .slide{position:relative;display:none!important;width:100%;height:100vh;page-break-after:always;border-bottom:1px solid #ddd;}
+    .slide.active{display:flex!important;}
+    #hud{display:none;}
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="deck">
+
+    <!-- ===== Title slide ===== -->
+    <section class="slide title-slide">
+      <div class="title-eyebrow">Comments on</div>
+      <h1 class="title-main">Modern Language Models Refute Chomsky&rsquo;s Approach to Language</h1>
+      <div class="title-sub">LLMs, linguistic theory, and the shifting burden of proof</div>
+      <div class="title-rule"></div>
+      <div class="title-meta">
+        <div class="presenter">ZHENG YUAN <span class="byron">(Byron)</span></div>
+        <div class="affiliation">LPL, Aix-Marseille University (AMU)</div>
+      </div>
+      <div class="title-footer">ILCB Summer School 2026 &middot; 28 August 2026 &middot; Aix-en-Provence</div>
+      <img class="title-fig" src="../assets/slides/title_composite.png" alt="Chomsky, Transformer architecture, and the Lunar Society of Birmingham">
+    </section>
+
+    <!-- ===== Slide 1 — Provocation ===== -->
+    <section class="slide">
+      <div class="kicker">2 &middot; The provocation</div>
+      <h1 class="slide-title">Do LLMs refute Chomskyan linguistics?</h1>
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-head">Classical generative view</div>
+          <svg class="tree" viewBox="0 0 320 230">
+            <line x1="160" y1="46" x2="80" y2="92"/>
+            <line x1="160" y1="46" x2="240" y2="92"/>
+            <line x1="80" y1="108" x2="40" y2="160"/>
+            <line x1="80" y1="108" x2="120" y2="160"/>
+            <line x1="240" y1="108" x2="200" y2="160"/>
+            <line x1="240" y1="108" x2="280" y2="160"/>
+            <text x="160" y="40" text-anchor="middle">S</text>
+            <text x="80" y="102" text-anchor="middle">NP</text>
+            <text x="240" y="102" text-anchor="middle">VP</text>
+            <text x="40" y="180" text-anchor="middle">Det</text>
+            <text x="120" y="180" text-anchor="middle">N</text>
+            <text x="200" y="180" text-anchor="middle">V</text>
+            <text x="280" y="180" text-anchor="middle">PP</text>
+          </svg>
+        </div>
+        <div class="panel">
+          <div class="panel-head">Modern LLM view</div>
+          <div class="flow">
+            <div class="pill">text</div>
+            <div class="arrow">&darr;</div>
+            <div class="pill">next-token prediction</div>
+            <div class="arrow">&darr;</div>
+            <div class="pill">trained transformer</div>
+          </div>
+        </div>
+      </div>
+      <div class="roadmap">
+        <div class="rk-q">Three questions we must keep separate:</div>
+        <ul>
+          <li>Can a model <span class="hl">perform</span> linguistic behavior?</li>
+          <li>Can it <span class="hl">learn</span> it from plausible input?</li>
+          <li>Does it do so by a <span class="hl">human-like</span> neural &amp; cognitive mechanism?</li>
+        </ul>
+      </div>
+      <div class="cite">Piantadosi (2024)</div>
+    </section>
+
+    <!-- ===== Slide 2 — Two pictures ===== -->
+    <section class="slide">
+      <div class="kicker">3 &middot; Two pictures of language</div>
+      <h1 class="slide-title">Two contrasting explanations of linguistic knowledge</h1>
+      <table class="cmp">
+        <thead>
+          <tr><th>A strong generative view</th><th>Predictive neural-network view</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Grammar relies on specialized, structured <span class="hl">principles</span></td><td>Grammar-like structure can <span class="hl">emerge</span> through learning</td></tr>
+          <tr><td>Syntax is relatively <span class="hl">autonomous</span></td><td>Syntax and semantics are <span class="hl">integrated</span></td></tr>
+          <tr><td>Key constraints may be <span class="hl">innate</span></td><td><span class="hl">General</span> learning biases + <span class="hl">data</span> may suffice</td></tr>
+          <tr><td>Explanation prioritizes <span class="hl">explicit formal structure</span></td><td>Explanation begins with <span class="hl">implemented predictive behavior</span></td></tr>
+        </tbody>
+      </table>
+      <div class="cmp-cap">Simplified &mdash; neither tradition is monolithic. Piantadosi targets strong claims of <span class="hl">necessity</span>, not every version of generative linguistics.</div>
+      <div class="cite">Piantadosi (2024)</div>
+    </section>
+
+    <!-- ===== Slide 3 — What an LLM does ===== -->
+    <section class="slide split-layout">
+      <div class="kicker">4 &middot; What an LLM actually does</div>
+      <h1 class="slide-title">One objective: predict what comes next</h1>
+      <div class="split-left">
+        <div class="example">The authors who the banker sees <span class="blank">___</span> tall.</div>
+        <div class="flow-h">Context &rarr; transformer representations &rarr; probability distribution</div>
+        <div class="prob">
+          <div class="prob-row"><span class="pl">are</span><span class="bar"><span class="fill" style="width:91%"></span></span><span class="pv">0.91</span></div>
+          <div class="prob-row"><span class="pl">is</span><span class="bar"><span class="fill dim" style="width:3%"></span></span><span class="pv">0.03</span></div>
+          <div class="prob-row"><span class="pl">were</span><span class="bar"><span class="fill dim" style="width:2%"></span></span><span class="pv">0.02</span></div>
+        </div>
+        <div class="note">To predict <span class="hl">are</span> (not <span class="strike">is</span>), the model tracks the long-distance dependency on <em>authors</em> &mdash; not the nearest noun <em>banker</em>.</div>
+        <div class="hl-box">Prediction is not the endpoint &mdash; it is the <span class="hl">learning signal</span>.</div>
+      </div>
+      <div class="split-right">
+        <div class="fig-block">
+          <div class="fig-title">Syntactic structure (object relative clause)</div>
+          <img src="../assets/slides/page_3_parse_tree.jpg" alt="Parse tree from Marvin &amp; Linzen (2018)">
+        </div>
+        <div class="fig-block">
+          <div class="fig-title">Agreement accuracy across an object relative clause</div>
+          <img src="../assets/slides/page_3_results.jpg" alt="Model vs. human agreement accuracy (Marvin &amp; Linzen, 2018)">
+        </div>
+      </div>
+      <div class="cite">(Marvin &amp; Linzen, 2018)</div>
+    </section>
+
+    <!-- ===== Slide 4 — Beyond autocomplete ===== -->
+    <section class="slide split-layout">
+      <div class="kicker">5 &middot; Beyond &ldquo;just autocomplete&rdquo;</div>
+      <h1 class="slide-title">The empirical claim: structure-sensitive behavior can emerge</h1>
+      <div class="split-left">
+        <div class="ex-pair">
+          <div class="ex-block">
+            <div class="ex-label">Declarative</div>
+            <div class="example">My walrus that <span class="dim-is">will</span> eat <span class="hl">can</span> giggle.</div>
+          </div>
+          <div class="ex-block">
+            <div class="ex-label">Question &mdash; move first (linear)</div>
+            <div class="example"><span class="dim-is">Will</span> my walrus that <span class="blank">___</span> eat <span class="hl">can</span> giggle?</div>
+          </div>
+          <div class="ex-block">
+            <div class="ex-label">Question &mdash; move matrix</div>
+            <div class="example"><span class="hl">Can</span> my walrus that <span class="dim-is">will</span> eat <span class="blank">___</span> giggle?</div>
+          </div>
+        </div>
+        <div class="note">A learner cannot move the first auxiliary (<em>will</em>) linearly &mdash; it must select the <span class="hl">matrix</span> auxiliary (<em>can</em>). LLMs reach the structure-dependent result without an explicitly encoded transformational rule.</div>
+        <div class="hl-box small">Anecdote &ne; evidence: use controlled minimal-pair tests, not a single ChatGPT output.</div>
+      </div>
+      <div class="split-right">
+        <div class="fig-block">
+          <div class="fig-title">SyntaxGym &mdash; targeted syntactic evaluation</div>
+          <img src="../assets/slides/page_4_syntaxgym.jpg" alt="SyntaxGym evaluation interface">
+        </div>
+        <div class="fig-block">
+          <div class="fig-title">BLiMP &mdash; minimal-pair benchmarks</div>
+          <img src="../assets/slides/page_4_blimp.jpg" alt="BLiMP benchmark">
+        </div>
+      </div>
+      <div class="cite">Piantadosi (2024); Gauthier et al. (2020); Warstadt &amp; Bowman (2022); McCoy, Frank &amp; Linzen (2018, 2020)</div>
+    </section>
+
+    <!-- ===== Slide 5 — Piantadosi's inference ===== -->
+    <section class="slide">
+      <div class="kicker">6 &middot; Piantadosi&rsquo;s strongest inference</div>
+      <h1 class="slide-title">What exactly is challenged?</h1>
+      <div class="chain">
+        <div class="chain-step">If mechanism <span class="hl">X</span> is <span class="hl">necessary</span> for grammar,<br>then a system without X should fail.</div>
+        <div class="chain-arrow">&darr;</div>
+        <div class="chain-step">LLMs lack explicit X yet achieve much grammar-like behavior.</div>
+        <div class="chain-arrow">&darr;</div>
+        <div class="chain-step concl">&there4; X is <span class="hl">not shown to be necessary.</span></div>
+      </div>
+      <div class="note">LLMs do not prove Chomskyan mechanisms are false in the brain &mdash; but they undermine the claim that those exact mechanisms are logically or computationally <span class="hl">necessary</span> for acquiring and using grammar.</div>
+      <div class="cite">Piantadosi (2024)</div>
+    </section>
+
+    <!-- ===== Slide 6 — Why the debate is not over ===== -->
+    <section class="slide">
+      <div class="kicker">7 &middot; Why the debate is not over</div>
+      <h1 class="slide-title">Performance is not acquisition or mechanism</h1>
+      <div class="s6-grid">
+        <div class="level green">
+          <div class="lv-tag">Behavioral adequacy</div>
+          <div class="lv-desc">Does it produce human-like judgments &amp; behavior? <span class="lv-stat">&mdash; plausible</span></div>
+        </div>
+        <figure class="s6-fig">
+          <img src="../assets/slides/page_6_chatgpt.jpg" alt="ChatGPT">
+          <figcaption>ChatGPT</figcaption>
+        </figure>
+
+        <div class="level amber">
+          <div class="lv-tag">Developmental adequacy</div>
+          <div class="lv-desc">Can it learn from child-realistic data &amp; experience? <span class="lv-stat">&mdash; open</span></div>
+        </div>
+        <figure class="s6-fig">
+          <img src="../assets/slides/page_6_babylm.jpg" alt="BabyLM Challenge">
+          <figcaption>BabyLM Challenge</figcaption>
+        </figure>
+
+        <div class="level red">
+          <div class="lv-tag">Mechanistic adequacy</div>
+          <div class="lv-desc">Does it use representations &amp; computations like the human brain? <span class="lv-stat">&mdash; unknown</span></div>
+        </div>
+        <figure class="s6-fig">
+          <img src="../assets/slides/page_6_pulvermuller.jpg" alt="F. Pulvermüller">
+          <figcaption>F. Pulvermüller</figcaption>
+        </figure>
+
+        <div class="s6-note">Current models train on far more text than children receive, from written corpora &mdash; not speech, interaction, perception, or social context. This limits, but does not erase, the proof-of-possibility result.</div>
+      </div>
+      <div class="cite">Piantadosi (2024); Warstadt &amp; Bowman (2022)</div>
+    </section>
+
+    <!-- ===== Slide 7 — Debate map & handoff (merged) ===== -->
+    <section class="slide">
+      <div class="kicker">8 &middot; Debate map &amp; handoff</div>
+      <h1 class="slide-title">The real debate: what must a theory explain?</h1>
+      <div class="three-q">
+        <div class="q-card">
+          <div class="q-n">Competence</div>
+          <div class="q-d">Can the system capture grammatical generalizations?</div>
+        </div>
+        <div class="q-card">
+          <div class="q-n">Learning</div>
+          <div class="q-d">Can it acquire them from realistic experience?</div>
+        </div>
+        <div class="q-card">
+          <div class="q-n">Explanation</div>
+          <div class="q-d">Must the theory be interpretable, symbolic, neurally grounded?</div>
+        </div>
+      </div>
+      <div class="hl-box">LLMs should not end linguistic theory &mdash; they should force it to become more <span class="hl">explicit, comparative, and empirically testable</span>.</div>
+      <div class="closing">Not refutation by default &mdash; a serious challenge that shifts the <span class="hl">burden of proof</span>.</div>
+      <div class="cite">Piantadosi (2024)</div>
+    </section>
+
+  </div>
+</div>
+<div id="hud"><span id="counter">1 / 8</span> &middot; &larr; &rarr; / space to navigate</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let cur = 0;
+  function show(i){
+
+    slides.forEach((s,k)=>s.classList.toggle('active', k===i));
+    document.getElementById('counter').textContent = (i+1) + ' / ' + slides.length;
+  }
+  document.addEventListener('keydown', e=>{
+    if(e.key==='ArrowRight' || e.key===' '){ e.preventDefault(); cur=Math.min(cur+1, slides.length-1); show(cur); }
+    if(e.key==='ArrowLeft'){ e.preventDefault(); cur=Math.max(cur-1,0); show(cur); }
+  });
+  document.getElementById('deck').addEventListener('click', ()=>{
+    cur=Math.min(cur+1, slides.length-1); show(cur);
+  });
+  function fit(){
+    const s = Math.min(window.innerWidth/1280, window.innerHeight/720);
+    document.getElementById('deck').style.transform = 'translate(-50%,-50%) scale(' + s + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit(); show(0);
+</script>
+</body>
+</html>
