@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
         },{id: "nav-slides",
           title: "slides",
           description: "Presentation slides and talks.",
@@ -54,6 +61,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-attended-the-7th-crete-summer-school-of-linguistics-creteling-2026-in-rethymno-crete-july-18-31",
           title: '🇬🇷 Attended the 7th Crete Summer School of Linguistics (CreteLing 2026) in Rethymno,...',
+          description: "",
+          section: "News",},{id: "news-launched-a-new-blog-section-with-14-chinese-articles-migrated-from-my-wechat-public-account-元语言-metalingua",
+          title: 'Launched a new blog section, with 14 Chinese articles migrated from my WeChat...',
           description: "",
           section: "News",},{id: "projects-axb-art-speech-similarity-experiment",
           title: 'AXB-ART Speech Similarity Experiment',
