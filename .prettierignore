@@ -10,3 +10,19 @@ _posts/2015-10-20-math.md
 _sass/font-awesome/*.scss
 _sass/tabler-icons/*.scss
 _scripts/*
+# >>> site_export（MetaLingua_WX 自动维护，勿手改）
+_posts/*-acrostic-poems.md
+_posts/*-chomsky-llm-lunar-society.md
+_posts/*-creteling-days-aegean-nights.md
+_posts/*-dual-universe-of-language.md
+_posts/*-eileen-chang-voice.md
+_posts/*-footballer-name-phonetics.md
+_posts/*-interactive-alignment-lexicon.md
+_posts/*-interactive-alignment-syntax.md
+_posts/*-linguist-odyssey.md
+_posts/*-probabilistic-language.md
+_posts/*-split-character-poems.md
+_posts/*-swearing-linguistics-prelude.md
+_posts/*-vanished-her.md
+_posts/*-zootopia-to-zoomorphism.md
+# <<< site_export
