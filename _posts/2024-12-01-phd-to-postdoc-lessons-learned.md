@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: From PhD to Postdoc - Lessons Learned in Speech Science Research
 date: 2024-12-01 09:00:00

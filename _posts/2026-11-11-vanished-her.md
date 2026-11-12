@@ -1,0 +1,203 @@
+---
+layout: post
+title: 消失的她：黄仁勋致歉信的批评话语分析
+date: '2026-11-11 22:51:00'
+description: 黄仁勋的致歉信提到了妻子、孩子、同事、股东，唯独没有婚外情的另一方。本文运用批评话语分析的删除、背景化、名物化与形容词化概念，分析「她」是怎样从文本中消失的，又为什么消失。
+tags:
+- 批评话语分析
+- 社会行动者
+- 道歉
+- 黄仁勋
+- 语言学
+categories: 元语言
+giscus_comments: false
+related_posts: true
+---
+
+> Language is continually used to foreground certain things and silence others.
+> {: style="margin-bottom:0.6em;"}
+>
+> 语言总是被用来凸显一些东西，同时让另一些东西沉默。
+> {: style="margin-bottom:0.6em;"}
+>
+> —— Machin & Mayr（2023, ch. 7）
+> {: style="text-align:right;margin-bottom:0.6em;"}
+
+要说这两天全球最火的新闻，那必须是黄仁勋（Jensen Huang）出轨。夫妻恩爱41年，都算得上红宝石婚了，老黄同志一时脑热，得，晚节不保。说来也巧，IT界的全球老首富们好像都有这个毛病，前有盖茨（Bill Gates），后有贝索斯（Jeff Bezos）。这两年谁最红？老黄啊。这不，没跑。有说是“英雄难过美人关”的，有说是“人红是非多”的，依我看，老黄呐，纯粹是飘了。谁能想到，几年前还是一个做游戏显卡的，到了AI时代成了全球最呼风唤雨的企业家，跟川建国同志在空军一号上谈笑风生？《红楼梦》里说“登高必跌重”，一下子爆出来个桃色新闻，英伟达市值两天干下去2.85万亿人民币，这个恋爱谈得实在是太他娘的贵了。
+
+英伟达方面11月8日公布了黄仁勋的内部致歉信，后经彭博社报道，成为全球老少爷们儿茶余饭后的第一谈资。但是，聪明的你，有没有发现，致歉信全文24句话，提到了老婆、孩子、同事、股东、董事会，但有个人偏偏消失了。谁呢？对喽，就是这个桃色事件的女主角，神秘的H女士。甚至，这封信里连“婚外情”三个字都没提。
+
+「她」是怎么消失的？又为什么消失？这篇文章就带您用批评话语分析（Critical Discourse Analysis，CDA）的眼光，把这封信细读一遍，尝试揭开谜底。配料有两样：一是系统功能语言学（Systemic Functional Linguistics，SFL）的及物性（transitivity）分析，看每句话里谁在「做什么事」、谁只是「是什么样」；二是 Theo van Leeuwen 的社会行动者理论（social actor representation），看谁被写了进来、谁被排除在外。
+
+---
+
+## 「她」的消失：删除与背景化
+
+> In the case of suppression, there is no reference to the social actor(s) in question anywhere in the text. … In the case of backgrounding, the exclusion is less radical: the excluded social actors may not be mentioned in relation to a given action, but they are mentioned elsewhere in the text, and we can infer with reasonable (though never total) certainty who they are.
+> {: style="margin-bottom:0.6em;"}
+>
+> 删除，是说文本里任何地方都没有提到这个（些）社会行动者。……背景化的排除没那么彻底：被排除的社会行动者，在某个行动里可能没被提到，但在文本别处提到过，我们能比较有把握（但永远不是十足把握）地推断出他们是谁。
+> {: style="margin-bottom:0.6em;"}
+>
+> —— van Leeuwen（2008: 29）
+> {: style="text-align:right;margin-bottom:0.6em;"}
+
+口说无凭，揭晓答案之前，我们先玩个“大家来找茬”游戏。图 1 是致歉信的全文，一共 24 句，我按顺序给每句编了号。先别往下翻，花一分钟从 S1 读到 S24，找一找：婚外情的另一方，在哪一句？
+
+
+<figure markdown="0" style="margin:0;"><section style="display:inline-block;width:100%;vertical-align:top;overflow-x:auto;box-sizing:border-box;"><section style="width:200%;overflow-x:hidden;max-width:200% !important;box-sizing:border-box;"><section style="display:inline-block;vertical-align:top;width:50%;box-sizing:border-box;"><img src="/assets/img/blog/vanished-her/fig1_letter.jpg" alt="图 1" style="vertical-align:middle;max-width:100%;width:100%;box-sizing:border-box;"></section><section style="display:inline-block;vertical-align:top;width:50%;box-sizing:border-box;"><img src="/assets/img/blog/vanished-her/fig1_letter_zh.jpg" alt="图 1 中文翻译" style="vertical-align:middle;max-width:100%;width:100%;box-sizing:border-box;"></section></section></section><p class="text-muted small" style="margin-top:4px;">向左滑动查看中文翻译</p></figure>
+
+_图 1　黄仁勋致歉信全文，按句编号 S1–S24。来源：作者据彭博社（Bloomberg）稿自制；版式非原件。中文为笔者逐句直译，括号内文字仅为通顺而补，分析以英文原文为准。_
+
+找到了吗？没找到就对了。不过「没找到」三个字太笼统，作为“严肃的语言学家”，得说清楚：是怎么个没找到法。为此得先学几个概念。
+
+**社会行动者（social actor）**是 van Leeuwen 的说法，指文本里写到的人，可以是一个人、一群人，也可以是一家机构。这封信里，黄仁勋本人、妻子、孩子、同事、董事会、股东，都是社会行动者。
+
+**过程（process）**和**参与者（participant）**来自系统功能语言学。它把一个小句看成一个过程，参与者即直接参与这个过程的人或机构（Halliday & Matthiessen, 2014: 213）。过程一般由动词来表达，参与者一般是名词或代词。
+
+拿 S3 来说：My actions hurt her and our children（我的行为伤害了她和我们的孩子）。过程是 hurt（伤害），参与者有两个：伤人的 my actions（我的行为），受伤的 her and our children（她和我们的孩子）。说白了，一个过程会给参与者留出几个位置，大家对号入座。
+
+位置空着，这叫**排除（exclusion）**。van Leeuwen 把排除分成两种，就是本节题引所说的：
+
+- **删除（suppression）**：全文哪儿都找不到这个参与者；
+- **背景化（backgrounding）**：这一句没写参与者，但文本别处写过，读者推得出是谁。
+
+那怎么知道某个位置上「本该有人」？看**痕迹**（trace）。van Leeuwen 说，事情写了，而人没写，就会留下痕迹：读者可以追问「是谁干的？」「谁受了害？」，哪怕文本不给答案（van Leeuwen, 2008: 29）。所以找参与者分两步：先找痕迹，确认这里是否本该有人；若有，再把全文检查一遍，找得到的是「背景化」，找不到的是「删除」。
+
+先看一个背景化的例子。S9 说：I take full responsibility for what I did and the hurt I caused（我对我所做的事和我造成的伤害承担全部责任）。伤了谁？这一句没说。可痕迹是有的——伤害总得有人受。往回翻到 S3，写得明明白白：受伤的是 her and our children，也就是妻子和孩子，这就是背景化。
+
+再回到「她」的问题。S2 说：I was unfaithful to my wife（我对我的妻子不忠）。不忠，就留下了痕迹：和谁？做了啥事？可您把 24 句翻个遍，也找不到答案。全信唯一的 her（她）在 S3，指的是妻子；全文没有另一个 she（她），连一个含糊的 someone（某人）都没有。“婚外情”这件事情含含糊糊地说了，但当事人却一次都没出现。按 van Leeuwen 的标准，这是删除。
+
+为了说法公允，得补一句：信里被删除的不止「她」。S9 后半句是 I accept the criticism that comes with it（我接受随之而来的批评）。谁在批评？媒体、公众，还是员工？全信没有一处交代，这也是「删除」。不过，仅此一例，与「她」的删除是不好比的。
+
+这样，第一个问题就清楚了：文本中有些句子省略了该出现的参与者，可这些人文本的其他地方出现过，比如妻子和孩子，这是背景化；只有「她」，在哪一句里都找不到，这是删除。那么问题来了：一个本该出现的人，是怎么在 24 句话里一次都不露面的？
+
+---
+
+## 如何消失：从「我做的」到「我怎样」
+
+> Activation occurs when social actors are represented as the active, dynamic forces in an activity, passivation when they are represented as "undergoing" the activity, or as being "at the receiving end of it."
+> {: style="margin-bottom:0.6em;"}
+>
+> 施事化，是把社会行动者写成活动中主动的、有能量的力量；受事化，是把他们写成「承受」活动的一方，处在活动的「接收端」。
+> {: style="margin-bottom:0.6em;"}
+>
+> —— van Leeuwen（2008: 33）
+> {: style="text-align:right;margin-bottom:0.6em;"}
+
+「她」在全文中一次都不用露面，靠的是一整套“话术”。要看清这一点，还得再学几个概念。
+
+先说两种过程。**物质过程（material process）**讲的是「做」，可以用「X 做了什么？」来检验（Halliday & Matthiessen, 2014: 230）。做事的参与者叫**动作者（Actor）**，被做的叫**目标（Goal）**。S8 的 I let them down（我辜负了他们）就是物质过程：「我」是动作者，「他们」是目标。**关系过程（relational process）**讲的是「是」和「有」，用来描述或者认定一样东西（Halliday & Matthiessen, 2014: 259），最常用的动词就是 be 和 have。被描述的参与者叫**载体（Carrier）**，描述参与者的性质叫**属性（Attribute）**。S5 的 I am deeply sorry（我深感抱歉）就是关系过程：「我」是载体，「抱歉」是属性。
+
+再看本节题引。van Leeuwen 说，**施事化（activation）**是把人写成主动做事的一方，**受事化（passivation）**是把人写成承受的一方。在语法上，施事化的人会占据这样几个位置：物质过程里的动作者（actor），行为过程里的行为者（behaver），心理过程里的感知者（senser），言语过程里的说话者（sayer），关系过程里的指派者（assigner）（van Leeuwen, 2008: 33）。请留意，这份施事化的位置清单里没有载体（Carrier）。
+
+最后，还有两种让人从字面上“消失”的写法。**名物化（nominalization）**是把一个过程写成名词，比如把「我做了某些事」写成 my actions（我的行为）；**形容词化（adjectivalization）**是把一个过程写成形容词。van Leeuwen 说，这两种写法都能把社会行动者排除出去：过程一旦变成名词或形容词，谁做的、对谁做的，就可以不写（van Leeuwen, 2008: 30）。
+
+概念学完了，回到信里。
+
+**第一种“话术”，形容词化。** S2 是 I was unfaithful to my wife（我对我的妻子不忠）。「不忠」是个形容词，后面只带一个对象：对谁不忠。这个位置，妻子已经占据了。换一种写法，比如 I had an affair with someone（我和某人有了婚外情），with （和）后面就必须有人，哪怕只是一个含糊的「某人」。用了 unfaithful，「某人」的位置在过程中就不存在了。于是，不忠成了「我」身上的一种状态；原本是「我」和另一个人一起做的事，这么一写就看不出来了。
+
+**第二种“话术”，名物化。** S3 是 My actions hurt her and our children（我的行为伤害了她和我们的孩子）。什么行为？和谁一起？actions（行为）这个名词把这些都藏了起来。Machin 和 Mayr 说，名物化能把施事者和受影响的人一起藏起来（Machin & Mayr, 2023, ch. 7）。这里，施事者以物主代词 my（我的）的形式留着，过程的另一个参与者却消失了。S22 的 my choices（我的选择）也一样：选择了什么，和谁有关，都不说。还要注意，S3 里伤害妻儿的动作者，在语法上是「我的行为」，不是「我」。
+
+**第三种“话术”，笼统说法。** S4 的 There is no excuse for what I did（我所做的事，没有任何借口），S9 的 what I did（我所做的事），S11 的 what I have done（我已经做下的事）。do（做）是英语里最笼统的动作动词之一，「我所做的事」怎么解释都行，大饼卷一切。做了什么、和谁做的，一概不提。
+
+![图 2](/assets/img/blog/vanished-her/fig2_three_ways.jpg){: .img-fluid .d-block .mx-auto style="max-height:70vh;"}
+
+_图 2　让「她」消失的三种写法。原句出自黄仁勋致歉信，中文为笔者直译；对照句为笔者构拟，非原文。_
+
+三种写法放在一起，还能看出一个更大的格局。把原文讲婚外情的第二段和讲家人的第三段并排看：
+
+- **第二段（婚外情）**：S2 里「我」是载体（不忠）；S3 的动作者是「我的行为」；S4 是一个「有……」的句子（没有任何借口）；S5 里「我」又是载体（抱歉）。还记得吗，van Leeuwen 认为载体不是施事者。那么，这几句里，占据动作者的位置的一次都不是「我」。
+- **第三段（家人）**：S8 的 I let them down and damaged the life we built together（我辜负了他们，损害了我们共同创造的生活），S9 的 I take full responsibility（我承担全部责任）。三个过程，「我」都是动作者。
+
+也就是说，伤害家人，大方承认，「我做的」；婚外情，不提，只写「我是怎样的」。
+
+这里要说清楚：van Leeuwen 的施事者清单里没有载体，并不等于载体就是受事化。van Leeuwen 只把一类特殊的关系过程里的载体算作受事化，就是有第三方给载体指派属性（van Leeuwen, 2008: 34），比如 they made Mary happy（他们让玛丽开心）里的 Mary 就是受事化（Halliday & Matthiessen, 2014: 288）。像「我是不忠的」这样的普通描述，在 van Leeuwen 的理论里没有明确的位置。
+
+到这里，「如何消失」就有了答案：语法上，「她」之所以能消失，是因为这封信选了一套不需要她出场的写法。形容词只留一个位置给妻子，名词把过程藏了起来，「我所做的事」把细节一笔带过，主句里的「我」又多半只是被描述的对象，而不是做事的人。那么，「她」的消失，对这封致歉信本身意味着什么？
+
+---
+
+## 消失之果：社会关系的再安排
+
+> … there need not be congruence between the roles that social actors actually play in social practices and the grammatical roles they are given in texts. Representations can reallocate roles or rearrange the social relations between the participants.
+> {: style="margin-bottom:0.6em;"}
+>
+> ……社会行动者在社会实践中实际扮演的角色，和他们在文本里被赋予的语法角色，不一定一致。再现可以重新分配角色，或者重新安排参与者之间的社会关系。
+> {: style="margin-bottom:0.6em;"}
+>
+> —— van Leeuwen（2008: 32）
+> {: style="text-align:right;margin-bottom:0.6em;"}
+
+前两节回答的是这封致歉信里「谁消失了」和「如何消失」。这一节换个角度：一篇文本里，谁和谁有关系、是什么关系，也可以通过“话术”安排，或者用 van Leeuwen 的话说叫「再现」（representation）。题引里说得很明白：现实中一个人扮演什么角色，和他在文本里被再现成什么语法角色，可以不一致；文本可以重新分配角色，也可以重新安排人与人之间的关系。
+
+让我们把这封信里的关系一条一条摆出来。
+
+**欠。** 信一开头，S1 就是 I owe my family and all of you an apology（我欠我的家人和你们所有人一个道歉）。欠债的是「我」，债主有两方：家人，和读信的员工。S13 对同事、董事会、合作伙伴和股东说 you deserve better from me（你们理应从我这里得到更好的），还是「我」欠「你们」。
+
+**伤害。** S3 是「我的行为」伤害了妻子和孩子，S8 是「我」辜负了家人。伤人的是「我」，受伤的是家人，没有第三方。
+
+**责任。** 这一条信里写了两遍，写法还不一样。第一遍是 S9 的 I take full responsibility（我承担全部责任），take（承担）是个动作，「我」是动作者。第二遍在信的末尾：S22 My family bears no responsibility for my choices（我的家人不为我的选择承担任何责任），S23 I do，中文是「（责任应该）由我承担」。bear（承担）在这里更像 have（有）：责任成了一样「有」或「没有」的东西。家人没有，「我」有。
+
+**隐私。** 最后一句，S24 Please give them privacy，中文是「请给他们以隐私（的保护）」。them（他们）是谁？往前找，指的是 S22 的 my family（我的家人）。请求保护隐私的对象，也是家人，没有第三方。
+
+把这几条“欠”的关系画成一张图，致歉信里只有两方，可以分成两组：一组关系是“伤害、责任、信任、隐私”，两方是「我」和「家人」；另一组关系是“服务、信任”，两方是「我」和「同事、股东等」。
+
+![图 3](/assets/img/blog/vanished-her/fig3_relations.jpg){: .img-fluid .d-block .mx-auto style="max-height:70vh;"}
+
+_图 3　信中关系。每条绿线是信里写到的一种关系。来源：作者据致歉信 S1–S24 自制；线上数字为句子编号。_
+
+婚外情的另一方，哪一条线上都没出现。「她」既不在「欠」的名单上，也不在「伤害」的名单上；责任分配时，没有「她」的份；请求保护隐私时，「他们」指的也不是「她」。
+
+**一件至少涉及三个人的事，在信里成了两方之间的账：「我」担全责，家人全免。**
+
+这就是「重新安排社会关系」。现实里，婚外情是「我」和另一个人之间发生的事；而在这封致歉信里，被安排成了「我」对家人和同事的亏欠，“明明是三个人的电影，我却始终不能有姓名”。
+
+说到这儿，必须澄清：「她」是否也该担责，那不是语言分析能回答的问题，也不是本文要讨论的——我们不做任何道德评价。
+
+至于这封致歉信为什么要这样写，是公关策略，还是另有考虑？这属于动机问题，单看文本是回答不了的。下一节，我们把几种可能摆出来。
+
+---
+
+## 为何消失：「无辜的」排除？
+
+> Representations include or exclude social actors to suit their interests and purposes in relation to the readers for whom they are intended. Some of the exclusions may be "innocent," details which readers are assumed to know already, or which are deemed irrelevant to them …
+> {: style="margin-bottom:0.6em;"}
+>
+> 再现会根据自身的利益和目的，针对预设的读者，把某些社会行动者写进来，或者排除出去。有些排除可能是「无辜的」：被排除的细节，读者被认为早已知道，或者被认为与读者无关……
+> {: style="margin-bottom:0.6em;"}
+>
+> —— van Leeuwen（2008: 28）
+> {: style="text-align:right;margin-bottom:0.6em;"}
+
+先说一个概念。van Leeuwen 认为，排除不一定都有深意，有些是**「无辜的」（innocent）**：省掉的内容，或者是读者被认为早就知道，或者跟读者没关系，那就不必写。他还说，被删除的人，读者乃至作者是否本该能找回来，往往很难判断：It is often difficult to know whether suppressed social actors are or are not supposed to be retrievable by the reader or, indeed, the writer（van Leeuwen, 2008: 30）。
+
+带着这个概念，我们把几种可能并排摆出来：
+
+1. **无辜的排除。** 致歉信的抬头是 Subject: A message to our company（主题：致公司全体员工的一封信），要处理的是公司事务，信里涉及家庭的内容也是服务于公司事务。至于第三方是谁，跟员工的工作无关，信里自然不用提。
+2. **避免麻烦。** 把「她」写进来，就得交代「她」是谁、是什么关系，公众的目光会从「致歉」转到「她」身上，事情变得更复杂，致歉本身反倒被冲淡了，不如不写。
+3. **客观上保护了「她」的隐私。** 不管写信人是否这样想，不写「她」，公众就少了一个打探的入口。
+4. **法律方面的考虑。** 涉及另一个人的陈述，可能带来法律上的麻烦，这也是一种可能。
+
+不过，「无辜」这个概念还能再往前推一步。van Leeuwen 说的「无辜」，有个前提：省掉的东西，读者要么早知道，要么不关心。这封信的读者是谁？抬头写的是员工，可它一经公布，读者就成了全世界的公众。对员工来说，她是谁，也许真的无关紧要；对公众来说，可就不一定了，毕竟“吃瓜群众不嫌事大”。
+
+van Leeuwen 自己也承认，哪一种写法更符合现实，is of course a problem that text analysis cannot solve（当然是文本分析解决不了的问题）。文本分析能做的，是考察在什么样的机构和社会语境里选了哪种写法，为什么会这样选，服务了谁的利益（van Leeuwen, 2008: 33）。所以，写信人心里到底是怎么想的，就留给各位自己判断吧。
+
+---
+## 结语
+好了，老黄这封致歉信就分析到这儿。“用话语分析吃瓜”，您学会了吗？学会了可要举一反三啊：警情通报、明星声明、企业致歉信，都可以问一句，这瓜保熟吗？
+
+
+## 参考资料
+
+Bloomberg. (2026, November 9). Jensen Huang admits affair; Nvidia Board orders probe into espionage claims. *The Hindu BusinessLine*.
+
+Halliday, M. A. K., & Matthiessen, C. M. I. M. (2014). *Halliday's introduction to functional grammar* (4th ed.). Routledge.
+
+Machin, D., & Mayr, A. (2023). *How to do critical discourse analysis: A multimodal introduction* (2nd ed.). SAGE.
+
+van Leeuwen, T. (2008). *Discourse and practice: New tools for critical discourse analysis*. Oxford University Press.
+
+---
+
+*本文首发于微信公众号「元语言」，[阅读原文](https://mp.weixin.qq.com/s/VszIzMR7Fqu4eaEK4rIh-g)。*
